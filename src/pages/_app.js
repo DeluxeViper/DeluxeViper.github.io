@@ -1,5 +1,7 @@
-import Theme from '../styles/theme';
+/** @format */
 
+import Theme from "../styles/theme";
+import "../styles/WorkStyles.css";
 export default function App({ Component, pageProps }) {
   return (
     <>
@@ -9,4 +11,3 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
- 

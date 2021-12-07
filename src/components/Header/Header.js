@@ -24,7 +24,6 @@ const Header = () => (
             display: "flex",
             "align-items": "center",
             color: "white",
-            marginBottom: "20px",
           }}
         >
           <DiCssdeck size="3rem" />
@@ -55,10 +54,13 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com">
+      <SocialIcons target="_blank" href="https://github.com/DeluxeViper">
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://linkedin.com">
+      <SocialIcons
+        target="_blank"
+        href="https://linkedin.com/in/abdullah-mohamed"
+      >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
     </Div3>
