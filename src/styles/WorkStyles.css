@@ -19,7 +19,6 @@ body {
 .work-card-container :hover {
   transition: transform 125ms;
   transform: translate(-20px, -10px);
-  border: 2px dashed blue;
 }
 
 .work-card {
@@ -186,7 +185,7 @@ body {
   pointer-events: none;
 }
 
-ul li::before {
+.work-description ul li::before {
   content: "▹";
   position: absolute;
   left: 0px;
@@ -195,5 +194,31 @@ ul li::before {
   pointer-events: none;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 900px) {
+  .work-card-container :hover {
+  }
+
+  .work-card {
+    flex-direction: column;
+  }
+
+  .ibm-work-card {
+    flex-direction: column;
+  }
+
+  .work-card-preview {
+    max-width: 100%;
+  }
+
+  .ibm-work-card-preview {
+    max-width: 100%;
+  }
+
+  .work-card h2 {
+    padding-top: 2rem;
+  }
+
+  .ibm-work-card h2 {
+    padding-top: 2rem;
+  }
 }

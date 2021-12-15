@@ -1,8 +1,14 @@
-import React from 'react';
+/** @format */
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import React from "react";
+
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import { LeftSection } from "./HeroStyles";
 
 const Hero = (props) => (
   <Section row nopadding>
@@ -11,10 +17,12 @@ const Hero = (props) => (
         Welcome to <br /> My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        Your purpose. What you can offer to employers.
+        {/* Your purpose. What you can offer to employers. */}I bring ideas into
+        fruition. From Android applications to Full-Stack Web applications, and
+        more.
       </SectionText>
-      <Button onClick={()=> window.location="https://www.google.com"}>
-        Learn More
+      <Button onClick={() => (window.location = "https://www.google.com")}>
+        Contact Me
       </Button>
     </LeftSection>
   </Section>

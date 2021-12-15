@@ -32,39 +32,18 @@ const WorkCard = (props) => (
           </span>
         </div>
         <h2>{props.workItem.title}</h2>
-        <ul class="list">
-          {props.workItem.description?.map((listItem) => (
-            <div>
-              <li>
-                <h6>{listItem}</h6>
-              </li>
-              <br />
-            </div>
-          ))}
-          {/* <li>
-              <h6>
-                Drove the development of transitioning a Legacy Web Application
-                to a Single Page Application for the IBM Business Process
-                Manager software in a Scrum environment
-              </h6>
-            </li>
-            <br />
-            <li>
-              <h6>
-                Developed RESTful APIs through the OpenAPI Specification and
-                refactored Java EE backend logic, as well as composed DB2 SQL
-                queries
-              </h6>
-            </li>
-            <br />
-            <li>
-              <h6>
-                Refactored and developed reliable frontend pages in React with
-                Typescript, CSS from JSP, GWT pages written in Java
-              </h6>
-            </li> */}
-        </ul>
-        {/* <button class="btn">Continue</button> */}
+        <div class="work-description">
+          <ul>
+            {props.workItem.description?.map((listItem) => (
+              <div>
+                <li>
+                  <h6>{listItem}</h6>
+                </li>
+                <br />
+              </div>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   </div>
