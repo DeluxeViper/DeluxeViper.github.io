@@ -71,9 +71,19 @@ const Timeline = () => {
 
   return (
     <Section id="about">
+      <SectionDivider />
+      <br />
       <SectionTitle>About me</SectionTitle>
       <SectionText>
-        How did you start learning something. What are your milestones?
+        {/* How did you start learning something. What are your milestones?  */}
+        Based out of Toronto, Ontario.
+        <br /> <br />
+        Currently pursuing a Bachelor of Engineering - B.Eng. focused in
+        Computer (Software) Engineering from Ryerson University. <br />
+        <br />I have a strong passion for full stack development, which includes
+        anything from React frontend to a Spring Boot backend, with a sprinkle
+        of SQL for the database. I also enjoy mobile development where I've
+        worked with Android/Flutter and a slight dash of iOS development.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -142,7 +152,6 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <SectionDivider />
     </Section>
   );
 };
