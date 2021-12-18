@@ -14,12 +14,12 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Welcome to <br /> My Personal Portfolio
+        Hi There!
       </SectionTitle>
       <SectionText>
-        {/* Your purpose. What you can offer to employers. */}I bring ideas into
-        fruition. From Android applications to Full-Stack Web applications, and
-        more.
+        {/* Your purpose. What you can offer to employers. */}I enjoy bringing
+        ideas into reality. From Android applications to Full-Stack Web
+        applications, and more.
       </SectionText>
       <Button onClick={() => (window.location = "https://www.google.com")}>
         Contact Me

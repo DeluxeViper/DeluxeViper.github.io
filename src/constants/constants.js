@@ -114,8 +114,8 @@ export const projects = [
     description: "Android Mobile Application [In Progress]",
     image: "/images/SmoothieWebsite.png",
     tags: ["Kotlin", "XML", "Room", "Retrofit", "OkHttp3", "Dagger", "GCP"],
-    code: "https://github.com/DeluxeViper/SmoothieWebsite",
-    demo: "http://smoothiemakerswebsite-env.eba-m6qvhd3n.us-east-2.elasticbeanstalk.com/home",
+    code: "",
+    demo: "",
   },
   {
     id: 3,
@@ -132,8 +132,8 @@ export const projects = [
       "RTMP",
       "Docker",
     ],
-    code: "https://github.com/DeluxeViper/SmoothieWebsite",
-    demo: "http://smoothiemakerswebsite-env.eba-m6qvhd3n.us-east-2.elasticbeanstalk.com/home",
+    code: "",
+    demo: "",
   },
   // {
   //   title: "MERN Memories",
@@ -178,7 +178,10 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
+  {
+    year: 2018,
+    text: "Started Computer Engineering (B. Eng) at Ryerson University",
+  },
   { year: 2018, text: "Worked as a freelance developer" },
   { year: 2019, text: "Founded JavaScript Mastery" },
   { year: 2020, text: "Shared my projects with the world" },

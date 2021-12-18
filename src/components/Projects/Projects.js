@@ -33,11 +33,6 @@ const Projects = () => {
           <ProjectCard project={project} />
         ))}
       </div>
-      <div
-        style={{
-          height: "500px",
-        }}
-      ></div>
     </Section>
   );
 };
