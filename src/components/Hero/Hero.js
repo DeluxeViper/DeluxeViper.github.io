@@ -21,7 +21,12 @@ const Hero = (props) => (
         ideas into reality. From Android applications to Full-Stack Web
         applications, and more.
       </SectionText>
-      <Button onClick={() => (window.location = "https://www.google.com")}>
+      <Button
+        target="_blank"
+        onClick={() =>
+          window.open("mailto:ab.tech.ventures@gmail.com", "_blank")
+        }
+      >
         Contact Me
       </Button>
     </LeftSection>

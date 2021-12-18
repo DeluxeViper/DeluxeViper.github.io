@@ -9,7 +9,7 @@ import {
   DiJava,
   DiAndroid,
 } from "react-icons/di";
-import { SiSpring, SiMongodb } from "react-icons/si";
+import { SiSpring, SiMongodb, SiFlutter } from "react-icons/si";
 import { FiDatabase } from "react-icons/fi";
 import { GoServer } from "react-icons/go";
 import { FaVaadin } from "react-icons/fa";
@@ -30,22 +30,19 @@ import {
 
 const Technologies = () => (
   <Section id="tech">
+    <div style={{ height: "50px" }} />
     <SectionDivider />
     <br />
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText></SectionText>
+    <SectionText>Here are the technologies that I've worked with!</SectionText>
     <List>
       <ListItem>
         <DiReact size="4rem" />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            <li>
-              <DiReact /> React
-            </li>
-            <li>
-              <FaVaadin /> Vaadin
-            </li>
+            <DiReact /> React
+            <FaVaadin /> Vaadin
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -54,14 +51,8 @@ const Technologies = () => (
           <GoServer size="3rem" />
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            {/* Experience with <br />
-            The Spring Framework, J2EE */}
-            <li>
-              <SiSpring /> The Spring Framework
-            </li>
-            <li>
-              <DiJava /> J2EE
-            </li>
+            <SiSpring /> The Spring Framework
+            <DiJava /> J2EE
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -70,20 +61,10 @@ const Technologies = () => (
           <FiDatabase size="3rem" />
           <ListTitle>Databases</ListTitle>
           <ListParagraph>
-            {/* SQL (MySQL, PostgreSQL, DB2, SQLite), NoSQL (Firebase RT DB,
-            MongoDB) */}
-            <li>
-              <DiMysql /> MySQL
-            </li>
-            <li>
-              <DiSqllite /> SQLite
-            </li>
-            <li>
-              <DiFirebase /> Firebase Real Time Database
-            </li>
-            <li>
-              <SiMongodb /> MongoDB
-            </li>
+            <DiMysql /> MySQL
+            <DiSqllite /> SQLite
+            <DiFirebase /> Firebase Real-Time Database
+            <SiMongodb /> MongoDB
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -92,10 +73,8 @@ const Technologies = () => (
           <AiOutlineMobile size="3rem" />
           <ListTitle>Others</ListTitle>
           <ListParagraph>
-            <li>
-              <DiAndroid /> Android
-            </li>
-            <li></li>
+            <DiAndroid /> Android
+            <SiFlutter /> Flutter
           </ListParagraph>
         </ListContainer>
       </ListItem>

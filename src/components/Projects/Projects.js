@@ -25,9 +25,11 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <Section nopadding id="projects">
+    <Section id="projects">
+      <div style={{ height: "50px" }} />
       <SectionDivider />
-      <SectionTitle main>Projects</SectionTitle>
+      <br />
+      <SectionTitle>Projects</SectionTitle>
       <div className="project_grid_container">
         {projects.map((project) => (
           <ProjectCard project={project} />
