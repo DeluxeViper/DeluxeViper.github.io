@@ -10,5 +10,6 @@ TODO:
 - Projects: add more projects ?
 - Nav: Navigating heights need to be adjusted for media width changes
 - Light and Dark Mode
+- Contact Form?
 
 - Add a logo?
