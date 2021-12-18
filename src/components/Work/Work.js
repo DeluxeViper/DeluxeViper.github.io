@@ -10,7 +10,7 @@ import { workExps } from "../../constants/constants";
 import WorkCard from "./WorkCard";
 
 const Work = () => (
-  <Section nopadding id="work">
+  <Section id="work">
     <div style={{ height: "100px" }} />
     <SectionDivider />
     <br />

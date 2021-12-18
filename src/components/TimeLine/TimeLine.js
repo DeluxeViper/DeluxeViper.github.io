@@ -84,6 +84,10 @@ const Timeline = () => {
         anything from React frontend to a Spring Boot backend, with a sprinkle
         of SQL for the database. I also enjoy mobile development where I've
         worked with Android/Flutter and a slight dash of iOS development.
+        <br />
+        <br />
+        I'm also very fond of working with IOT technology including
+        embedded/firmware development, or robotics.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
