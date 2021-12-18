@@ -18,9 +18,13 @@ const ProjectCard = (props) => (
           <SocialIcons target="_blank" href={props.project.code}>
             <AiFillGithub size="4rem" />
           </SocialIcons>
-          <SocialIcons target="_blank" href={props.project.demo}>
-            <AiOutlineLink size="4rem" />
-          </SocialIcons>
+          {props.project.demo !== "" ? (
+            <SocialIcons target="_blank" href={props.project.demo}>
+              <AiOutlineLink size="4rem" />
+            </SocialIcons>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>
