@@ -9,7 +9,8 @@ TODO:
 - Footer : phone number change
 - Projects: add more projects ?
 - Nav: Navigating heights need to be adjusted for media width changes
-- Light and Dark Mode
+- Add Nav Drop Down
 - Contact Form?
+- Make website PWA
 
 - Add a logo?

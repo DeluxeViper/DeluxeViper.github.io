@@ -42,6 +42,7 @@ const Technologies = () => (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             <DiReact /> React
+            <br />
             <FaVaadin /> Vaadin
           </ListParagraph>
         </ListContainer>
@@ -52,6 +53,7 @@ const Technologies = () => (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             <SiSpring /> The Spring Framework
+            <br />
             <DiJava /> J2EE
           </ListParagraph>
         </ListContainer>
@@ -62,8 +64,11 @@ const Technologies = () => (
           <ListTitle>Databases</ListTitle>
           <ListParagraph>
             <DiMysql /> MySQL
+            <br />
             <DiSqllite /> SQLite
+            <br />
             <DiFirebase /> Firebase Real-Time Database
+            <br />
             <SiMongodb /> MongoDB
           </ListParagraph>
         </ListContainer>
@@ -74,6 +79,7 @@ const Technologies = () => (
           <ListTitle>Others</ListTitle>
           <ListParagraph>
             <DiAndroid /> Android
+            <br />
             <SiFlutter /> Flutter
           </ListParagraph>
         </ListContainer>
