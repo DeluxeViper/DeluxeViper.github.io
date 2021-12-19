@@ -1,8 +1,8 @@
 /** @format */
 
-import Theme from "../styles/theme";
 import "../styles/WorkStyles.css";
 import "../styles/ProjectStyles.css";
+import "../styles/ToggleStyles.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,9 +15,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Theme>
-        <Component {...pageProps} />
-      </Theme>
+      <Component {...pageProps} />
     </>
   );
 }

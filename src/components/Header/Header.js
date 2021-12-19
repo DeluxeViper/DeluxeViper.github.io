@@ -13,6 +13,7 @@ import {
   Div3,
   NavLink,
   SocialIcons,
+  ThemeDiv,
 } from "./HeaderStyles";
 
 const Header = () => (
@@ -23,10 +24,11 @@ const Header = () => (
           styles={{
             display: "flex",
             "align-items": "center",
-            color: "white",
           }}
         >
-          <DiCssdeck size="3rem" />
+          <ThemeDiv>
+            <DiCssdeck size="3rem" />
+          </ThemeDiv>
           <Span>Abdullah Mohamed</Span>
         </a>
       </Link>

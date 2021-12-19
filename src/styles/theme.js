@@ -1,13 +1,18 @@
-import { ThemeProvider } from 'styled-components';
+/** @format */
 
-import theme from "../themes/default";
-import GlobalStyles from './globals';
+import { ThemeProvider } from "styled-components";
 
-const Theme = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyles />
-    {children}
-  </ThemeProvider>
-);
+import { useState } from "react";
+import { lightTheme, darkTheme } from "../themes/default";
+import GlobalStyles from "./globals";
+
+const Theme = ({ themeType, children }) => {
+  return (
+    <ThemeProvider theme={themeType === "dark" ? darkTheme : lightTheme}>
+      <GlobalStyles />
+      {children}
+    </ThemeProvider>
+  );
+};
 
 export default Theme;
