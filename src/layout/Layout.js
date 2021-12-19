@@ -1,15 +1,19 @@
-import React from 'react'
+/** @format */
 
-import Footer from '../components/Footer/Footer'
-import Header from '../components/Header/Header'
-import { Container } from './LayoutStyles'
+import { React, useState } from "react";
 
-export const Layout = ({children}) => {
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import { Container } from "./LayoutStyles";
+
+export const Layout = ({ children }) => {
+  const [themeType, setThemeType] = useState("light");
+
   return (
     <Container>
-     <Header/>
-     <main>{children}</main> 
-     <Footer/>
+      <Header themeType={themeType} setThemeType={setThemeType} />
+      <main>{children}</main>
+      <Footer />
     </Container>
-  )
-}
+  );
+};

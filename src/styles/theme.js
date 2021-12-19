@@ -2,16 +2,21 @@
 
 import { ThemeProvider } from "styled-components";
 
-import { useState } from "react";
+import { useState, createContext } from "react";
 import { lightTheme, darkTheme } from "../themes/default";
 import GlobalStyles from "./globals";
 
-const Theme = ({ themeType, children }) => {
+export const ThemeContext = createContext();
+
+const Theme = ({ children }) => {
+  const [theme, setTheme] = useState("light");
   return (
-    <ThemeProvider theme={themeType === "dark" ? darkTheme : lightTheme}>
-      <GlobalStyles />
-      {children}
-    </ThemeProvider>
+    <ThemeContext.Provider value={[theme, setTheme]}>
+      <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
+        <GlobalStyles />
+        {children}
+      </ThemeProvider>
+    </ThemeContext.Provider>
   );
 };
 

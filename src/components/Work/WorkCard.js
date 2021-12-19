@@ -26,8 +26,11 @@ const WorkCard = (props) => (
         }
       >
         <div class="progress-container">
-          <div class="progress"></div>
-          <span class="progress-text">
+          {/* <div class="progress"></div> */}
+          <span
+            class="progress-text"
+            style={{ position: "relative", top: "-10px" }}
+          >
             {props.workItem.startDate} - {props.workItem.endDate}
           </span>
         </div>

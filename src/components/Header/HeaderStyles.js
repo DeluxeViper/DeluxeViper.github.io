@@ -43,10 +43,10 @@ export const Div1 = styled.div`
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
@@ -140,4 +140,12 @@ export const SocialIcons = styled.a`
 
 export const ThemeDiv = styled.div`
   color: ${(props) => props.theme.colors.primary1};
+`;
+
+export const HeaderItem = styled.li`
+  padding: 1rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0.25rem;
+  }
 `;
