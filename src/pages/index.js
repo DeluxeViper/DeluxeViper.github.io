@@ -11,6 +11,7 @@ import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import Theme from "../styles/theme";
 import { useState } from "react";
+import NavDropDown from "../components/NavDropDown";
 
 const Home = () => {
   const [themeType, setThemeType] = useState("light");
@@ -27,6 +28,7 @@ const Home = () => {
         <Technologies />
         <Timeline />
         {/* <Acomplishments /> */}
+        {/* <NavDropDown isOpen={true} /> */}
       </Layout>
     </Theme>
   );

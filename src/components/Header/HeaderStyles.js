@@ -3,6 +3,19 @@
 import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
+export const SmallHeaderContainer = styled.div`
+  display: none;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: 10px;
+    align-items: center;
+    margin-left: 30px;
+  }
+`;
+
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -19,17 +32,29 @@ export const Container = styled.div`
   // #0f1624
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
+    height: 90px;
+    display: none;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: repeat(2, 60px);
+    // grid-column-gap: 0.5rem;
+    // grid-row-gap: 0.5rem;
   }
 `;
 
 export const Span = styled.span`
   font-size: 2rem;
+  width: 100%;
   color: ${(props) => props.theme.colors.primary1};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 2.5rem;
+  }
+`;
+
+export const LinksDiv = styled.div`
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: none;
+  }
 `;
 
 export const Div1 = styled.div`
@@ -38,8 +63,9 @@ export const Div1 = styled.div`
   flex-direction: row;
   align-content: center;
   margin-left: 2rem;
+  justify-content: space-between;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
+    display: block;
   }
 `;
 export const Div2 = styled.div`
@@ -140,6 +166,19 @@ export const SocialIcons = styled.a`
 
 export const ThemeDiv = styled.div`
   color: ${(props) => props.theme.colors.primary1};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: none;
+  }
+`;
+
+export const P = styled.p`
+  color: ${(props) => props.theme.colors.primary1};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 3rem;
+    white-space: nowrap;
+  }
 `;
 
 export const HeaderItem = styled.li`

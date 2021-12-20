@@ -89,7 +89,11 @@ const Timeline = () => {
         I'm also very fond of working with IOT technology including
         embedded/firmware development, or robotics.
       </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <CarouselContainer
+        ref={carouselRef}
+        onScroll={handleScroll}
+        style={{ marginTop: "30px" }}
+      >
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode

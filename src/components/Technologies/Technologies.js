@@ -37,8 +37,8 @@ const Technologies = () => (
     <SectionText>Here are the technologies that I've worked with!</SectionText>
     <List>
       <ListItem>
-        <DiReact size="4rem" />
         <ListContainer>
+          <DiReact size="3rem" />
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             <DiReact /> React
