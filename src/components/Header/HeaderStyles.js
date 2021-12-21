@@ -7,12 +7,15 @@ export const SmallHeaderContainer = styled.div`
   display: none;
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     height: 100px;
-    margin: 10px;
+    width: 100%;
+    z-index: 1;
     align-items: center;
-    margin-left: 30px;
+    background-color: ${(props) => props.theme.colors.background1};
   }
 `;
 
@@ -23,8 +26,7 @@ export const Container = styled.div`
   grid-column-gap: 2rem;
   padding: 1rem;
   padding-top: 2rem;
-  margin-top: 10px;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: ${(props) => props.theme.colors.background1};
   z-index: 1;
@@ -168,7 +170,6 @@ export const ThemeDiv = styled.div`
   color: ${(props) => props.theme.colors.primary1};
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    display: none;
   }
 `;
 
