@@ -26,6 +26,8 @@ import {
   LinksDiv,
   P,
   SmallHeaderContainer,
+  BackgroundDiv,
+  MotionDiv,
 } from "./HeaderStyles";
 import { ThemeContext } from "./../../styles/theme";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
@@ -34,8 +36,6 @@ import styles from "./HeaderStyle.module.css";
 const Header = () => {
   const [theme, setTheme] = useContext(ThemeContext);
   const shouldReduceMotion = useReducedMotion();
-
-  useEffect(() => {}, []);
 
   const getDarkModeToggle = () => (
     <div style={{ marginLeft: "48px" }}>
@@ -111,47 +111,51 @@ const Header = () => {
         </Div1>
         <Menu>
           {({ isExpanded }) => {
-            const state = isExpanded ? "open" : "closed";
-
             useEffect(() => {
-              console.log(isExpanded);
-              // if (isExpanded) {
-              //   // don't use overflow-hidden, as that toggles the scrollbar and causes layout shift
-              //   document.body.classList.add("fixed");
-              //   document.body.classList.add("overflow-y-scroll");
-              //   // alternatively, get bounding box of the menu, and set body height to that.
-              //   document.body.style.height = "100vh";
-              // } else {
-              //   document.body.classList.remove("fixed");
-              //   document.body.classList.remove("overflow-y-scroll");
-              //   document.body.style.removeProperty("height");
-              // }
+              if (isExpanded) {
+                // don't use overflow-hidden, as that toggles the scrollbar and causes layout shift
+                document.body.classList.add("fixed");
+                document.body.classList.add("overflow-y-scroll");
+                document.body.style.overflowY = "hidden";
+                // alternatively, get bounding box of the menu, and set body height to that.
+                document.body.style.height = "100vh";
+              } else {
+                document.body.classList.remove("fixed");
+                document.body.classList.remove("overflow-y-scroll");
+                document.body.style.removeProperty("height");
+                document.body.style.removeProperty("overflow-y");
+              }
             }, [isExpanded]);
+            const state = isExpanded ? "open" : "closed";
 
             return (
               <div>
-                <MenuButton>
+                <MenuButton
+                  style={{
+                    border: "none",
+                    margin: "25px",
+                  }}
+                >
                   <HamburgerIcon />
                 </MenuButton>
                 <AnimatePresence>
-                  <MenuPopover>
-                    <motion.div
+                  <MenuPopover style={{ outline: "none" }}>
+                    <MotionDiv
                       initial={{ y: -50, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       exit={{ y: -50, opacity: 0 }}
                       transition={{
                         ease: "linear",
-                      }}
-                      style={{
-                        position: "fixed",
-                        top: "90px",
-                        left: "0",
-                        height: "100%",
-                        width: "100%",
-                        backgroundColor: "white",
+                        duration: shouldReduceMotion ? 0 : 0.15,
                       }}
                     >
-                      <MenuItems style={{ height: "100%", width: "100%" }}>
+                      <MenuItems
+                        style={{
+                          height: "100%",
+                          width: "100%",
+                          outline: "none",
+                        }}
+                      >
                         <MenuItem className={styles.menu_item}>Work</MenuItem>
                         <MenuItem className={styles.menu_item}>
                           Projects
@@ -160,11 +164,13 @@ const Header = () => {
                           Technologies
                         </MenuItem>
                         <MenuItem className={styles.menu_item}>About</MenuItem>
-                        <MenuItem className={styles.menu_item}>
+                        <MenuItem
+                          className={`${styles.menu_item} ${styles.no_border}`}
+                        >
                           {getDarkModeToggle()}
                         </MenuItem>
                       </MenuItems>
-                    </motion.div>
+                    </MotionDiv>
                   </MenuPopover>
                 </AnimatePresence>
               </div>

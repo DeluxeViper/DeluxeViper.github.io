@@ -1,5 +1,5 @@
 /** @format */
-
+import { motion } from "framer-motion";
 import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
@@ -188,4 +188,17 @@ export const HeaderItem = styled.li`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.25rem;
   }
+`;
+
+export const BackgroundDiv = styled.div`
+  background-color: ${(props) => props.theme.colors.background1};
+`;
+
+export const MotionDiv = styled(motion.div)`
+  position: fixed;
+  top: 100px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: ${(props) => props.theme.colors.background1};
 `;
