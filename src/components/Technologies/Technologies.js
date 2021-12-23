@@ -29,8 +29,8 @@ import {
 } from "./TechnologiesStyles";
 
 const Technologies = () => (
-  <Section id="tech">
-    <div style={{ height: "50px" }} />
+  <Section>
+    <span id="tech" style={{ position: "relative", top: "-130px" }}></span>
     <SectionDivider />
     <br />
     <SectionTitle>Technologies</SectionTitle>

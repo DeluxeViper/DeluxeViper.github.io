@@ -54,6 +54,13 @@ export const Span = styled.span`
 `;
 
 export const LinksDiv = styled.div`
+  padding-left: 20px;
+  display: flex;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: block;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
   }
@@ -201,4 +208,8 @@ export const MotionDiv = styled(motion.div)`
   height: 100%;
   width: 100%;
   background-color: ${(props) => props.theme.colors.background1};
+`;
+
+export const ThemeText = styled.div`
+  color: ${(props) => props.theme.colors.primary1};
 `;

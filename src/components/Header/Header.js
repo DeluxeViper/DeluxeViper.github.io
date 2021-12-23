@@ -1,5 +1,4 @@
 /** @format */
-
 import Link from "next/link";
 import React, { useContext, useEffect, useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
@@ -28,6 +27,7 @@ import {
   SmallHeaderContainer,
   BackgroundDiv,
   MotionDiv,
+  ThemeText,
 } from "./HeaderStyles";
 import { ThemeContext } from "./../../styles/theme";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
@@ -93,17 +93,21 @@ const Header = () => {
   return (
     <div>
       <SmallHeaderContainer>
-        <Div1 styles={{ width: "100%" }}>
-          <Link href="#" className={styles.link_name}>
+        <Div1 style={{ width: "100%" }}>
+          <Link
+            href="#"
+            className={styles.link_name}
+            style={{ display: "flex" }}
+          >
             <a
-              styles={{
+              style={{
                 display: "flex",
                 "align-items": "center",
                 "white-space": "nowrap",
               }}
             >
               <ThemeDiv>
-                <DiCssdeck size="5rem" />
+                <DiCssdeck size="4rem" />
               </ThemeDiv>
               <P>Abdullah Mohamed</P>
             </a>
@@ -136,7 +140,7 @@ const Header = () => {
                     margin: "25px",
                   }}
                 >
-                  <HamburgerIcon />
+                  <HamburgerIcon opened={isExpanded} />
                 </MenuButton>
                 <AnimatePresence>
                   <MenuPopover style={{ outline: "none" }}>
@@ -149,27 +153,41 @@ const Header = () => {
                         duration: shouldReduceMotion ? 0 : 0.15,
                       }}
                     >
-                      <MenuItems
-                        style={{
-                          height: "100%",
-                          width: "100%",
-                          outline: "none",
-                        }}
-                      >
-                        <MenuItem className={styles.menu_item}>Work</MenuItem>
-                        <MenuItem className={styles.menu_item}>
-                          Projects
-                        </MenuItem>
-                        <MenuItem className={styles.menu_item}>
-                          Technologies
-                        </MenuItem>
-                        <MenuItem className={styles.menu_item}>About</MenuItem>
-                        <MenuItem
-                          className={`${styles.menu_item} ${styles.no_border}`}
+                      <ThemeText>
+                        <MenuItems
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            outline: "none",
+                          }}
                         >
-                          {getDarkModeToggle()}
-                        </MenuItem>
-                      </MenuItems>
+                          <Link href="#work">
+                            <MenuItem className={styles.menu_item}>
+                              Work
+                            </MenuItem>
+                          </Link>
+                          <Link href="#projects">
+                            <MenuItem className={styles.menu_item}>
+                              Projects
+                            </MenuItem>
+                          </Link>
+                          <Link href="#tech">
+                            <MenuItem className={styles.menu_item}>
+                              Technologies
+                            </MenuItem>
+                          </Link>
+                          <Link href="#about">
+                            <MenuItem className={styles.menu_item}>
+                              About
+                            </MenuItem>
+                          </Link>
+                          <MenuItem
+                            className={`${styles.menu_item} ${styles.no_border}`}
+                          >
+                            {getDarkModeToggle()}
+                          </MenuItem>
+                        </MenuItems>
+                      </ThemeText>
                     </MotionDiv>
                   </MenuPopover>
                 </AnimatePresence>
@@ -180,9 +198,9 @@ const Header = () => {
       </SmallHeaderContainer>
       <Container>
         <Div1>
-          <Link href="#" className={styles.link_name}>
+          <Link className={styles.link_name} href="#">
             <a
-              styles={{
+              style={{
                 display: "flex",
                 "align-items": "center",
               }}

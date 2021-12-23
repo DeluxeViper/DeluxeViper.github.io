@@ -13,7 +13,7 @@ export const Layout = ({ children }) => {
     <Container>
       <Header themeType={themeType} setThemeType={setThemeType} />
       <main style={{ marginTop: "120px" }}>{children}</main>
-      <Footer />
+      <Footer style={{}} />
     </Container>
   );
 };

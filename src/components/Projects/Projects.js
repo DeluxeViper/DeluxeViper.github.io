@@ -25,8 +25,11 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <Section id="projects">
-      <div style={{ height: "50px" }} />
+    <Section>
+      <span
+        id="projects"
+        style={{ position: "relative", top: "-130px" }}
+      ></span>
       <SectionDivider />
       <br />
       <SectionTitle>Projects</SectionTitle>

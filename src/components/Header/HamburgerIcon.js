@@ -1,14 +1,10 @@
 /** @format */
 
 import styles from "./HamburgerIconStyles.module.css";
-import { useState } from "react";
-const HamburgerIcon = () => {
-  const [opened, isOpened] = useState(false);
-
+const HamburgerIcon = ({ opened }) => {
   return (
     <button
       class={`${styles.menu} ${opened ? styles.opened : ""}`}
-      onClick={() => isOpened(!opened)}
       aria-label="Main Menu"
     >
       <svg width="80" height="80" viewBox="0 0 100 100">

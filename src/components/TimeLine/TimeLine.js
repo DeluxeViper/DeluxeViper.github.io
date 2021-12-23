@@ -70,7 +70,8 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
+    <Section>
+      <span id="about" style={{ position: "relative", top: "-130px" }}></span>
       <SectionDivider />
       <br />
       <SectionTitle>About me</SectionTitle>
