@@ -2,11 +2,10 @@
 
 ## Personal Portfolio
 
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
+Credits to the portfolio template I used: https://github.com/adrianhajdin/portfolio_website
 
 TODO:
 
-- Footer : phone number change
 - Projects: add more projects ?
 - Contact Form?
 - Make website PWA
