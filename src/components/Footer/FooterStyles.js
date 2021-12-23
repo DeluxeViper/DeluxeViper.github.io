@@ -8,9 +8,12 @@ export const FooterWrapper = styled.section`
   padding: 2rem 48px 40px;
   margin: 1rem auto;
   box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
+    flex-direction: column;
     width: calc(100vw - 32px);
   }
 `;
@@ -45,7 +48,6 @@ export const LinkItem = styled.a`
 `;
 
 export const SocialIconsContainer = styled.div`
-  max-width: 1040px;
   display: flex;
   justify-content: space-between;
 
@@ -63,13 +65,13 @@ export const SocialIconsContainer = styled.div`
 
 export const CompanyContainer = styled.div`
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   margin-right: auto;
+  padding: 50px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     flex-direction: column;
-    align-items: baseline;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -113,8 +115,6 @@ export const SocialContainer = styled.div`
 
 export const LinkList = styled.ul`
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
-  grid-template-columns: repeat(3, minmax(85px, 220px));
   gap: 40px;
   padding: 40px 0 28px;
 
@@ -139,6 +139,11 @@ export const LinkColumn = styled.div`
   flex-direction: column;
   max-width: 220px;
   width: 100%;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    max-width: 100%;
+    align-items: center;
+  }
 `;
 
 export const LinkTitle = styled.h4`
