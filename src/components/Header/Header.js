@@ -1,6 +1,6 @@
 /** @format */
 import Link from "next/link";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
 import HamburgerIcon from "./HamburgerIcon";
@@ -10,8 +10,6 @@ import {
   MenuPopover,
   MenuItem,
   MenuItems,
-  MenuLink,
-  useMenuButtonContext,
 } from "@reach/menu-button";
 import {
   Container,
@@ -25,12 +23,11 @@ import {
   LinksDiv,
   P,
   SmallHeaderContainer,
-  BackgroundDiv,
   MotionDiv,
   ThemeText,
 } from "./HeaderStyles";
 import { ThemeContext } from "./../../styles/theme";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, useReducedMotion } from "framer-motion";
 import styles from "./HeaderStyle.module.css";
 
 const Header = () => {
@@ -107,7 +104,12 @@ const Header = () => {
               }}
             >
               <ThemeDiv>
-                <DiCssdeck size="4rem" />
+                {/* <DiCssdeck size="4rem" /> */}
+                <img
+                  src="/images/portfolioImage.jpg"
+                  height="4rem"
+                  width="4rem"
+                ></img>
               </ThemeDiv>
               <P>Abdullah Mohamed</P>
             </a>
@@ -207,6 +209,14 @@ const Header = () => {
             >
               <ThemeDiv>
                 <DiCssdeck size="5rem" />
+                {/* If you want a portfolio image as the icon uncomment this */}
+                {/* <img
+                  src="/images/portfolioImage.png"
+                  style={{
+                    width: "70%",
+                    transform: "scale(1.25)",
+                  }}
+                ></img> */}
               </ThemeDiv>
               <P>Abdullah Mohamed</P>
             </a>
