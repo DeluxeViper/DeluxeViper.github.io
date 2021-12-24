@@ -80,7 +80,8 @@ const Timeline = () => {
         Based out of Toronto, Ontario.
         <br /> <br />
         Currently pursuing a Bachelor of Engineering - B.Eng. focused in
-        Computer (Software) Engineering from Ryerson University. <br />
+        Computer Engineering (Software Concentration) from Ryerson University.{" "}
+        <br />
         <br />I have a strong passion for full stack development, which includes
         anything from React frontend to a Spring Boot backend, with a sprinkle
         of SQL for the database. I also enjoy mobile development where I've

@@ -57,6 +57,10 @@ export const LinksDiv = styled.div`
   padding-left: 20px;
   display: flex;
 
+  @media (max-width: 870px) {
+    display: block;
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
     display: block;
   }
@@ -198,6 +202,10 @@ export const HeaderItem = styled.li`
   padding: 1rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0.25rem;
+  }
+
+  @media (max-width: 761px) {
     padding: 0.25rem;
   }
 `;
