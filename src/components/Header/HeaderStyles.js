@@ -187,6 +187,11 @@ export const P = styled.p`
     font-size: 3rem;
     white-space: nowrap;
   }
+
+  @media ${(props) => props.theme.breakpoints.xs} {
+    font-size: 2rem;
+    white-space: break-spaces;
+  }
 `;
 
 export const HeaderItem = styled.li`

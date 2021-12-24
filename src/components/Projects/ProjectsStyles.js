@@ -23,6 +23,7 @@ export const GridContainer = styled.section`
     padding-bottom: 0;
   }
 `;
+
 export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0);
@@ -32,6 +33,7 @@ export const BlogCard = styled.div`
     width: 100%;
   }
 `;
+
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;

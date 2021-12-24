@@ -104,12 +104,12 @@ const Header = () => {
               }}
             >
               <ThemeDiv>
-                {/* <DiCssdeck size="4rem" /> */}
-                <img
+                <DiCssdeck size="4rem" />
+                {/* <img
                   src="/images/portfolioImage.jpg"
                   height="4rem"
                   width="4rem"
-                ></img>
+                ></img> */}
               </ThemeDiv>
               <P>Abdullah Mohamed</P>
             </a>

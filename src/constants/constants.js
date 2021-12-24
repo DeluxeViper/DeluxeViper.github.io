@@ -76,7 +76,7 @@ export const projects = [
     short_description: "Full Stack Web Application",
     description:
       "A Progressive Web Application that brings all Smoothie Makers alike to come together, create healthy & nutritious recipes, and share them with each other.",
-    image: "/images/SmoothieWebsite.png",
+    image: `images/SmoothieWebsite.png`,
     tags: [
       "Java",
       "Python",
@@ -102,7 +102,7 @@ export const projects = [
     short_description: "Cross-Platform Mobile Application",
     description:
       "MemoryGo is a flashcard tool that lets you study without realization while you play games, surf the internet, watch a video, chat with friends or any other task.",
-    image: "/images/MemoryGo.png",
+    image: `images/MemoryGo.png`,
     tags: ["Dart", "Java (Android)", "XML", "SQL (SQLite)", "Gradle"],
     code: "https://github.com/DeluxeViper/Memorygo",
     demo: "https://play.google.com/store/apps/details?id=com.ceruleansource.MemoryGo",
@@ -113,7 +113,7 @@ export const projects = [
     short_description: "Android Mobile Application [In Progress]",
     description:
       "A mobile app that allows the user to either broadcast their own stream and/or find and join streams happening around them through a google maps populated with a series of markers that indicate the myriad of logged in users that might or might not be streaming.",
-    image: "/images/work_in_progress.png",
+    image: `images/work_in_progress.png`,
     tags: ["Kotlin", "XML", "Room", "Retrofit", "OkHttp3", "Dagger", "GCP"],
     code: "https://github.com/DeluxeViper/LivestreamApp",
     demo: "",
@@ -124,7 +124,7 @@ export const projects = [
     short_description: "RESTful API Backend [In Progress]",
     description:
       "A backend for a livestreaming client application that consumes it. This backend's capabilities ranges from JWT user authentication, to being able to manage the MongoDB database that it's connected to.",
-    image: "/images/work_in_progress.png",
+    image: `images/work_in_progress.png`,
     tags: [
       "Java",
       "Spring (Boot, Security, Web, Reactive MongoDB)",

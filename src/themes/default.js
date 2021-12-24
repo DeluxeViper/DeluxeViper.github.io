@@ -18,6 +18,7 @@ export const lightTheme = {
   },
   // Breakpoints for responsive design
   breakpoints: {
+    xs: "screen and (max-width: 470px)",
     sm: "screen and (max-width: 640px)",
     md: "screen and (max-width: 768px)",
     lg: "screen and (max-width: 1024px)",
@@ -43,6 +44,7 @@ export const darkTheme = {
   },
   // Breakpoints for responsive design
   breakpoints: {
+    xs: "screen and (max-width: 470px)",
     sm: "screen and (max-width: 640px)",
     md: "screen and (max-width: 768px)",
     lg: "screen and (max-width: 1024px)",

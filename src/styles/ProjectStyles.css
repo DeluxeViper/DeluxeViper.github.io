@@ -117,3 +117,15 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 640px) {
+  .project_grid_container {
+    display: initial;
+  }
+}
+
+@media (max-width: 470px) {
+  .project_title {
+    font-size: 2rem;
+  }
+}
