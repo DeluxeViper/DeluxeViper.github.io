@@ -35,7 +35,7 @@ const Header = () => {
   const shouldReduceMotion = useReducedMotion();
 
   const getDarkModeToggle = () => (
-    <div style={{ marginLeft: "48px" }}>
+    <div>
       <input
         className="toggle"
         type="checkbox"

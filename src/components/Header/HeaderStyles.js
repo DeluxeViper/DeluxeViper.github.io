@@ -206,6 +206,10 @@ export const HeaderItem = styled.li`
   }
 
   @media (max-width: 761px) {
+    padding: 0.5rem;
+  }
+
+  @media (max-width: 700px) {
     padding: 0.25rem;
   }
 `;

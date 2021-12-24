@@ -56,6 +56,10 @@ export const SocialIconsContainer = styled.div`
     justify-content: space-between;
   }
 
+  @media (max-width: 701px) {
+    flex-direction: column;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     width: 100%;
