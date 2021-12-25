@@ -27,7 +27,6 @@ export const Container = styled.div`
   top: 0;
   background-color: ${(props) => props.theme.colors.background1};
   z-index: 1;
-  // max-width: 1040px;
   width: 100%;
   justify-content: space-between;
 
