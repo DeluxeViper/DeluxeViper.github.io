@@ -20,16 +20,16 @@ export const SmallHeaderContainer = styled.div`
 `;
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
+  display: flex;
   padding: 1rem;
   padding-top: 2rem;
   position: fixed;
   top: 0;
   background-color: ${(props) => props.theme.colors.background1};
   z-index: 1;
+  // max-width: 1040px;
+  width: 100%;
+  justify-content: space-between;
 
   // #0f1624
 
@@ -112,6 +112,11 @@ export const NavLink = styled.a`
     opacity: 1;
     cursor: pointer;
   }
+
+  @media (max-width: 700px) {
+    font-size: 1.7rem;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
   }
@@ -185,8 +190,12 @@ export const ThemeDiv = styled.div`
 `;
 
 export const P = styled.p`
+  font-size: 3rem;
   color: ${(props) => props.theme.colors.primary1};
 
+  @media (max-width: 721px) {
+    font-size: 2rem;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 3rem;
     white-space: nowrap;
@@ -216,6 +225,7 @@ export const HeaderItem = styled.li`
 
 export const BackgroundDiv = styled.div`
   background-color: ${(props) => props.theme.colors.background1};
+  width: 100%;
 `;
 
 export const MotionDiv = styled(motion.div)`

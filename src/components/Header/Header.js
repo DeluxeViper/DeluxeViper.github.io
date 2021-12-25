@@ -25,6 +25,7 @@ import {
   SmallHeaderContainer,
   MotionDiv,
   ThemeText,
+  BackgroundDiv,
 } from "./HeaderStyles";
 import { ThemeContext } from "./../../styles/theme";
 import { AnimatePresence, useReducedMotion } from "framer-motion";
@@ -199,67 +200,79 @@ const Header = () => {
         </Menu>
       </SmallHeaderContainer>
       <Container>
-        <Div1>
-          <Link className={styles.link_name} href="#">
-            <a
-              style={{
-                display: "flex",
-                "align-items": "center",
-              }}
-            >
-              <ThemeDiv>
-                <DiCssdeck size="5rem" />
-                {/* If you want a portfolio image as the icon uncomment this */}
-                {/* <img
+        <div
+          style={{
+            maxWidth: "1040px",
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <Div1>
+            <Link className={styles.link_name} href="#">
+              <a
+                style={{
+                  display: "flex",
+                  "align-items": "center",
+                }}
+              >
+                <ThemeDiv>
+                  <DiCssdeck size="5rem" />
+                  {/* If you want a portfolio image as the icon uncomment this */}
+                  {/* <img
                   src="/images/portfolioImage.png"
                   style={{
                     width: "70%",
                     transform: "scale(1.25)",
                   }}
                 ></img> */}
-              </ThemeDiv>
-              <P>Abdullah Mohamed</P>
-            </a>
-          </Link>
-        </Div1>
-        <LinksDiv>
-          <Div2>
-            <HeaderItem>
-              <Link href="#work">
-                <NavLink>Work</NavLink>
-              </Link>
-            </HeaderItem>
-            <HeaderItem>
-              <Link href="#projects">
-                <NavLink>Projects</NavLink>
-              </Link>
-            </HeaderItem>
-            <HeaderItem>
-              <Link href="#tech">
-                <NavLink>Technologies</NavLink>
-              </Link>
-            </HeaderItem>
-            <HeaderItem>
-              <Link href="#about">
-                <NavLink>About</NavLink>
-              </Link>
-            </HeaderItem>
-            <HeaderItem style={{ position: "relative", top: "-10px" }}>
-              {getDarkModeToggle()}
-            </HeaderItem>
-          </Div2>
-          <Div3>
-            <SocialIcons target="_blank" href="https://github.com/DeluxeViper">
-              <AiFillGithub size="3rem" />
-            </SocialIcons>
-            <SocialIcons
-              target="_blank"
-              href="https://linkedin.com/in/abdullah-mohamed"
-            >
-              <AiFillLinkedin size="3rem" />
-            </SocialIcons>
-          </Div3>
-        </LinksDiv>
+                </ThemeDiv>
+                <P>Abdullah Mohamed</P>
+              </a>
+            </Link>
+          </Div1>
+          <LinksDiv>
+            <Div2>
+              <HeaderItem>
+                <Link href="#work">
+                  <NavLink>Work</NavLink>
+                </Link>
+              </HeaderItem>
+              <HeaderItem>
+                <Link href="#projects">
+                  <NavLink>Projects</NavLink>
+                </Link>
+              </HeaderItem>
+              <HeaderItem>
+                <Link href="#tech">
+                  <NavLink>Technologies</NavLink>
+                </Link>
+              </HeaderItem>
+              <HeaderItem>
+                <Link href="#about">
+                  <NavLink>About</NavLink>
+                </Link>
+              </HeaderItem>
+              <HeaderItem style={{ position: "relative", top: "-10px" }}>
+                {getDarkModeToggle()}
+              </HeaderItem>
+            </Div2>
+            <Div3>
+              <SocialIcons
+                target="_blank"
+                href="https://github.com/DeluxeViper"
+              >
+                <AiFillGithub size="3rem" />
+              </SocialIcons>
+              <SocialIcons
+                target="_blank"
+                href="https://linkedin.com/in/abdullah-mohamed"
+              >
+                <AiFillLinkedin size="3rem" />
+              </SocialIcons>
+            </Div3>
+          </LinksDiv>
+        </div>
       </Container>
     </div>
   );
