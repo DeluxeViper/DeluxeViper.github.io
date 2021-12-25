@@ -37,6 +37,39 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           />
+          {/* Primary Meta Tags */}
+          <meta
+            name="title"
+            content="Abdullah Mohamed - Personal Portfolio Site"
+          />
+          <meta
+            name="description"
+            content="Abdullah's Personal Portfolio Website. Innovating one project at a time."
+          />
+
+          {/* Open Graph / Facebook */}
+          <meta
+            name="title"
+            property="og:title"
+            content="Abdullah's Portfolio Site"
+          />
+          <meta name="type" property="og:type" content="website" />
+          <meta
+            name="image"
+            property="og:image"
+            content="images/demo_pic.png"
+          />
+          <meta
+            name="url"
+            property="og:url"
+            content="https://deluxeviper.github.io/Portfolio-Website"
+          />
+          <meta
+            name="description"
+            property="og:description"
+            content="Abdullah's Personal Portfolio Website. Innovating one project at a time."
+          />
+
           {/* <link rel="manifest" href="/manifest.json" /> */}
         </Head>
         <body>
