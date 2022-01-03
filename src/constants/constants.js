@@ -113,7 +113,7 @@ export const projects = [
     short_description: "Android Mobile Application [In Progress]",
     description:
       "A mobile app that allows the user to either broadcast their own stream and/or find and join streams happening around them through a google maps populated with a series of markers that indicate the myriad of logged in users that might or might not be streaming.",
-    image: `images/work_in_progress.png`,
+    image: `images/livestream.jpeg`,
     tags: ["Kotlin", "XML", "Room", "Retrofit", "OkHttp3", "Dagger", "GCP"],
     code: "https://github.com/DeluxeViper/LivestreamApp",
     demo: "",
@@ -124,7 +124,7 @@ export const projects = [
     short_description: "RESTful API Backend [In Progress]",
     description:
       "A backend for a livestreaming client application that consumes it. This backend's capabilities ranges from JWT user authentication, to being able to manage the MongoDB database that it's connected to.",
-    image: `images/work_in_progress.png`,
+    image: `images/server.jpeg`,
     tags: [
       "Java",
       "Spring (Boot, Security, Web, Reactive MongoDB)",
@@ -132,7 +132,7 @@ export const projects = [
       "JWT",
       "NGINX",
       "RTMP",
-      "Docker",
+      "Docker (Compose)",
     ],
     code: "https://github.com/DeluxeViper/livestreambackend-mongodb",
     demo: "",
