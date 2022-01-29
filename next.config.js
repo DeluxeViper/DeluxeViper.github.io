@@ -11,8 +11,8 @@ const nextConfig = {
 };
 
 module.exports = {
-  basePath: isProduction ? "/Portfolio-Website" : "",
-  assetPrefix: isProduction ? "/Portfolio-Website" : "",
+  basePath: isProduction ? "" : "",
+  assetPrefix: isProduction ? "" : "",
 };
 
 // module.exports = withPWA({
