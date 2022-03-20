@@ -94,7 +94,6 @@ export const projects = [
       "OAuth2.0",
     ],
     code: "https://github.com/DeluxeViper/SmoothieWebsite",
-    demo: "http://smoothiemakerswebsite-env.eba-m6qvhd3n.us-east-2.elasticbeanstalk.com/home",
   },
   {
     id: 1,
