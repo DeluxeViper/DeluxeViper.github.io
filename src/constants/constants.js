@@ -3,20 +3,31 @@
 export const workExps = [
   {
     id: 0,
+    company: "Amazon",
+    title: "Incoming Software Developer Engineer Intern",
+    location: "Toronto, ON",
+    description: [],
+    startDate: "June 2022",
+    endDate: "Aug 2022",
+  },
+  {
+    id: 1,
     company: "IBM",
-    title: "Full Stack Developer Intern",
+    title: "Software Developer Intern",
     location: "Toronto, ON",
     description: [
-      "Drove the development of transitioning a Legacy Web Application to a Single Page Application for the IBM Business Process Manager software in a Scrum environment",
-      "Developed RESTful APIs through the OpenAPI Specification and refactored Java EE backend logic, as well as composed DB2 SQL queries",
-      "Refactored and developed reliable frontend pages in React with Typescript, CSS from JSP, GWT pages written in Java",
-      "Utilized Jira, Git and IBM Rational Team Concert to organize tasks through functional needs and manage code delivery",
+      "Drove the development of transitioning a Legacy Web Application to a Single Page Application for the IBM Business Process Manager (BPM) software in a Scrum environment",
+      "Developed RESTful APIs through the OpenAPI Specification and refactored Java EE backend logic, as well as worked on the database layer (DB2)",
+      "Refactored and developed reliable frontend pages in React with Typescript and CSS from JSP, Dojo, GWT pages written in Java",
+      "Implemented i18n (internationalization) as well as IBM standardized accessibility requirements within the SPA",
+      "Utilized Jira, Git, Jenkins, JFrog Artifactory and IBM RTC to organize tasks through functional needs and manage CI/CD pipelines",
+      "Investigated and produced fixes for defects and bugs within the IBM Business Process Manager software",
     ],
     startDate: "May 2021",
     endDate: "June 2022",
   },
   {
-    id: 1,
+    id: 2,
     company: "Helium Aero",
     title: "Android Application Developer",
     location: "Toronto, ON",
@@ -29,7 +40,7 @@ export const workExps = [
     endDate: "Jul 2021",
   },
   {
-    id: 2,
+    id: 3,
     company: "Lightening Group LLC.",
     title: "Frontend Developer",
     location: "Remote",
@@ -42,7 +53,7 @@ export const workExps = [
     endDate: "Dec 2020",
   },
   {
-    id: 3,
+    id: 4,
     company: "Ryerson University",
     title: "Undergraduate Research Assistant",
     location: "Toronto, ON",
@@ -55,7 +66,7 @@ export const workExps = [
     endDate: "Aug 2020",
   },
   {
-    id: 4,
+    id: 5,
     company: "Balancever",
     title: "Android Developer",
     location: "Toronto, ON",
@@ -94,6 +105,7 @@ export const projects = [
       "OAuth2.0",
     ],
     code: "https://github.com/DeluxeViper/SmoothieWebsite",
+    demo: "",
   },
   {
     id: 1,

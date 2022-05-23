@@ -43,6 +43,17 @@ body {
   margin-bottom: 20px;
 }
 
+.amz-work-card {
+  background-color: #000;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .work-card h6 {
   opacity: 0.6;
   margin: 0;
@@ -93,6 +104,17 @@ body {
   min-width: 25%;
   padding: 30px;
   display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.amz-work-card-preview {
+  background-color: #FF9900;
+  color: #fff;
+  max-width: 250px;
+  min-width: 25%;
+  display: flex;
+  padding: 30px;
   flex-direction: column;
   pointer-events: none;
 }
@@ -207,11 +229,19 @@ body {
     flex-direction: column;
   }
 
+  .amz-work-card {
+    flex-direction: column;
+  }
+
   .work-card-preview {
     max-width: 100%;
   }
 
   .ibm-work-card-preview {
+    max-width: 100%;
+  }
+
+  .amz-work-card-preview {
     max-width: 100%;
   }
 
@@ -221,5 +251,9 @@ body {
 
   .ibm-work-card h2 {
     padding-top: 2rem;
+  }
+
+  .amz-work-card h2 {
+    padding-top: 1rem;
   }
 }

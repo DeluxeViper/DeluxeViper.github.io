@@ -5,12 +5,20 @@ import React from "react";
 const WorkCard = (props) => (
   <div class="work-card-container">
     <div
-      class={props.workItem.company === "IBM" ? "ibm-work-card" : "work-card"}
+      class={
+        props.workItem.company === "IBM"
+          ? "ibm-work-card"
+          : props.workItem.company === "Amazon"
+          ? "amz-work-card"
+          : "work-card"
+      }
     >
       <div
         class={
           props.workItem.company === "IBM"
             ? "ibm-work-card-preview"
+            : props.workItem.company === "Amazon"
+            ? "amz-work-card-preview"
             : "work-card-preview"
         }
       >
