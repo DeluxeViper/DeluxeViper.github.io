@@ -13,7 +13,7 @@ export const workExps = [
       "Utilized Jira, Git and IBM Rational Team Concert to organize tasks through functional needs and manage code delivery",
     ],
     startDate: "May 2021",
-    endDate: "Present",
+    endDate: "June 2022",
   },
   {
     id: 1,
