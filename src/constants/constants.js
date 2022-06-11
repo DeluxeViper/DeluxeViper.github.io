@@ -4,9 +4,11 @@ export const workExps = [
   {
     id: 0,
     company: "Amazon",
-    title: "Incoming Software Developer Engineer Intern",
+    title: "Software Developer Engineer Intern",
     location: "Toronto, ON",
-    description: [],
+    description: [
+      "Working within the Amazon Ads organization with a tech stack of Java & React",
+    ],
     startDate: "June 2022",
     endDate: "Aug 2022",
   },
