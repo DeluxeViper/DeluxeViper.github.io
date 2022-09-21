@@ -7,7 +7,9 @@ export const workExps = [
     title: "Software Developer Engineer Intern",
     location: "Toronto, ON",
     description: [
-      "Working within the Amazon Ads organization with a tech stack of Java & React",
+      "Developed, tested, and deployed full-stack, internationalized features (22 countries) whilst leveraging Java, React (Typescript, Javascript, Redux, Jest) for the Advertising Console product within the Amazon Ads org",
+      "Devised technical strategies by diagnosing architectural software approaches while collaborating closely with key stakeholders, estimating effort & work for features, and executing task planning to exactitude",
+      "Constructed a QuickSight dashboard for business intelligence analysis & improved operational excellence for internal UI library by approximately 75%",
     ],
     startDate: "June 2022",
     endDate: "Aug 2022",

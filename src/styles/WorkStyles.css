@@ -54,6 +54,11 @@ body {
   margin-bottom: 20px;
 }
 
+.amz-work-card h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .work-card h6 {
   opacity: 0.6;
   margin: 0;
@@ -119,6 +124,16 @@ body {
   pointer-events: none;
 }
 
+.amz-work-card-preview a {
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.6;
+  text-decoration: none;
+  margin-top: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+
 .work-card-preview a {
   color: #fff;
   font-size: 12px;
@@ -154,6 +169,16 @@ body {
   width: 100%;
   margin-left: 10px;
   color: #000;
+  pointer-events: none;
+}
+
+.amz-work-card-info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  margin-left: 10px;
+  color: #e6e6e6;
+  font-size: 20px;
   pointer-events: none;
 }
 
@@ -216,6 +241,8 @@ body {
   padding-left: 1rem;
   pointer-events: none;
 }
+
+
 
 @media (max-width: 900px) {
   .work-card-container :hover {

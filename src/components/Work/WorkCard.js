@@ -30,6 +30,8 @@ const WorkCard = (props) => (
         class={
           props.workItem.company === "IBM"
             ? "ibm-work-card-info"
+            : props.workItem.company === "Amazon"
+            ? "amz-work-card-info"
             : "work-card-info"
         }
       >
