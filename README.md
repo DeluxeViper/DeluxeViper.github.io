@@ -20,6 +20,8 @@ Credits to the portfolio template I used: https://github.com/adrianhajdin/portfo
 
 ### Deploy Steps
 
+Note: Adding & pushing a commit also triggers deployment
+
 1. run `npm run deploy`
 2. if the deployment defaults to repository name, set custom domain to your domain name (Github Settings -> Pages -> Custom Domain)
 
