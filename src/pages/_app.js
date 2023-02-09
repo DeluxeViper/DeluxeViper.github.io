@@ -17,8 +17,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Script
+        async
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.REACT_APP_GOOGLE_ANALYTICS_TAG}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TAG}`}
       />
       <Script
         id="google-analytics"
