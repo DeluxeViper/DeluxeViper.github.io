@@ -27,4 +27,5 @@ Note: Adding & pushing a commit also triggers deployment
 
 ### Dev environment
 
-1. run `npm run dev`
+1. make sure node version is around 16 (I use 16.18.1) -> `nvm use 16`
+2. run `npm run dev`
