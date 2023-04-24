@@ -104,7 +104,7 @@ export const projects = [
       "AWS Elastic Beanstalk",
       "AWS RDS",
       "BeautifulSoup4",
-      "Seleinum",
+      "Selenium",
       "Vaadin",
       "OAuth2.0",
     ],
@@ -124,6 +124,28 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Cooking Recipe Suggestion Web App",
+    short_description: "Full Stack Web Application",
+    description:
+      "With 1930 ingredients and 1489 recipes, Cook.io is a web application that provides cooking recipes to users based on the ingredients they input.",
+    image: `images/CRS-Web-App.png`,
+    tags: [
+      "Javascript",
+      "Express.",
+      "React",
+      "MaterialUI",
+      "Python",
+      "Redis (caching)",
+      "Firebase Auth",
+      "Firebase Cloud Firestore",
+      "Jira",
+      "Figma",
+    ],
+    code: "https://github.com/DeluxeViper/Cooking-Recipe-Suggestion-Web-App",
+    demo: "",
+  },
+  {
+    id: 3,
     title: "Livestream App",
     short_description: "Android Mobile Application [In Progress]",
     description:
@@ -134,7 +156,7 @@ export const projects = [
     demo: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "Livestream Backend",
     short_description: "RESTful API Backend [In Progress]",
     description:
