@@ -147,7 +147,7 @@ export const projects = [
   {
     id: 3,
     title: "Livestream App",
-    short_description: "Android Mobile Application [In Progress]",
+    short_description: "Android Mobile Application",
     description:
       "A mobile app that allows the user to either broadcast their own stream and/or find and join streams happening around them through a google maps populated with a series of markers that indicate the myriad of logged in users that might or might not be streaming.",
     image: `images/livestream.jpeg`,
@@ -158,7 +158,7 @@ export const projects = [
   {
     id: 4,
     title: "Livestream Backend",
-    short_description: "RESTful API Backend [In Progress]",
+    short_description: "RESTful API Backend",
     description:
       "A backend for a livestreaming client application that consumes it. This backend's capabilities ranges from JWT user authentication, to being able to manage the MongoDB database that it's connected to.",
     image: `images/server.jpeg`,
@@ -172,6 +172,17 @@ export const projects = [
       "Docker (Compose)",
     ],
     code: "https://github.com/DeluxeViper/livestreambackend-mongodb",
+    demo: "",
+  },
+  {
+    id: 5,
+    title: "Torrent Clone",
+    short_description: "P2P CLI application",
+    description:
+      "A P2P application (created in C) that allows peers to share and download content through an index server via UDP and TCP communication. (Complete technical description on github)",
+    image: `images/p2p_image.jpeg`,
+    tags: ["C", "UDP", "TCP", "GCC", "Makefile"],
+    code: "https://github.com/DeluxeViper/TorrentClone",
     demo: "",
   },
 ];
