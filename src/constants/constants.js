@@ -87,6 +87,17 @@ export const workExps = [
 export const projects = [
   {
     id: 0,
+    title: "SmartFridgeAddOn",
+    short_description: "IoT Embedded device + Machine Learning + Web App",
+    description:
+      "My Computer Engineering undergraduate capstone project (spanning over two semesters) consisted of a full semester consisting of the research phase, as well as a full semester for the implementation phase. Our project was to design a system of components that could make a fridge smart through ingredient detection and recipe recommendation. In this README I've attempted to summarize our accomplishments over the 2 semesters, focusing primarily on the implementation phase.",
+    image: `images/hello.png`,
+    tags: [],
+    code: "https://github.com/DeluxeViper/SmartFridgeAddOn",
+    demo: "",
+  },
+  {
+    id: 1,
     title: "SmoothieMakersClub",
     short_description: "Full Stack Web Application",
     description:
@@ -112,7 +123,7 @@ export const projects = [
     demo: "",
   },
   {
-    id: 1,
+    id: 2,
     title: "MemoryGo",
     short_description: "Cross-Platform Mobile Application",
     description:
@@ -123,7 +134,7 @@ export const projects = [
     demo: "https://play.google.com/store/apps/details?id=com.ceruleansource.MemoryGo",
   },
   {
-    id: 2,
+    id: 3,
     title: "Cooking Recipe Suggestion Web App",
     short_description: "Full Stack Web Application",
     description:
@@ -145,7 +156,7 @@ export const projects = [
     demo: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "Livestream App",
     short_description: "Android Mobile Application",
     description:
@@ -156,7 +167,7 @@ export const projects = [
     demo: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Livestream Backend",
     short_description: "RESTful API Backend",
     description:
@@ -175,7 +186,7 @@ export const projects = [
     demo: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Torrent Clone",
     short_description: "P2P CLI application",
     description:
