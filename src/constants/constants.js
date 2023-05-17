@@ -32,6 +32,31 @@ export const workExps = [
   },
   {
     id: 2,
+    company: "Toronto Metropolitan University",
+    title: "Research Assistant",
+    location: "Toronto, ON",
+    description: [
+      "Spearheading the development of efficient ML models for in-game emotion recognition for therapeutic VR games",
+      "Explored and implemented custom ML (CNN) model deployment onto Unity3D with C# on several OS (Android, etc.)",
+      "Collaborating with the director of multimedia at TMU, post-doctorate student, several undergraduate RAs",
+    ],
+    startDate: "May 2023",
+    endDate: "Present",
+  },
+  {
+    id: 3,
+    company: "Innovation Boost Zone - Aetava",
+    title: "Frontend Developer",
+    location: "Toronto, ON",
+    description: [
+      "Developed and integrated a custom-made mood board plugin for a WordPress application",
+      "Implemented a React + Canvas app using Javascript & HTML/CSS, utilizing the WooCommerce API",
+    ],
+    startDate: "May 2023",
+    endDate: "Present",
+  },
+  {
+    id: 4,
     company: "Helium Aero",
     title: "Android Application Developer",
     location: "Toronto, ON",
@@ -44,7 +69,7 @@ export const workExps = [
     endDate: "Jul 2021",
   },
   {
-    id: 3,
+    id: 5,
     company: "Lightening Group LLC.",
     title: "Frontend Developer",
     location: "Remote",
@@ -57,8 +82,8 @@ export const workExps = [
     endDate: "Dec 2020",
   },
   {
-    id: 4,
-    company: "Ryerson University",
+    id: 6,
+    company: "Toronto Metropolitan University",
     title: "Undergraduate Research Assistant",
     location: "Toronto, ON",
     description: [
@@ -70,7 +95,7 @@ export const workExps = [
     endDate: "Aug 2020",
   },
   {
-    id: 5,
+    id: 7,
     company: "Balancever",
     title: "Android Developer",
     location: "Toronto, ON",
@@ -213,12 +238,26 @@ export const projects = [
     code: "https://github.com/DeluxeViper/TorrentClone",
     demo: "",
   },
+  {
+    id: 7,
+    title: "Air Traffic Control System",
+    short_description: "Distributed System - CLI Application",
+    description:
+      "Collaborated with a team of 4 individuals to create an Air Traffic Control System that uses technologies such as RabbitMQ and gRPC to ensure a distributed, scalable, secure and robust system inspired by the AeroMACS communication system (with some modifications).",
+    image: `images/ATS.jpg`,
+    tags: ["Python", "RabbitMQ", "gRPC", "Docker compose"],
+    code: "https://github.com/nigel5/air-traffic-control-system",
+    demo: "",
+  },
 ];
 
 export const TimeLineData = [
   {
     year: 2018,
-    text: "Started Computer Engineering (B. Eng) at Ryerson University",
+    text: "Started Computer Engineering (B. Eng) at Toronto Metropolitan University",
   },
-  { year: 2023, text: "Expected Graduation" },
+  {
+    year: 2023,
+    text: "Graduated w/ Academic Distinction at Toronto Metropolitan University",
+  },
 ];
