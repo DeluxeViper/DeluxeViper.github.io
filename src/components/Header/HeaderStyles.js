@@ -240,3 +240,44 @@ export const MotionDiv = styled(motion.div)`
 export const ThemeText = styled.div`
   color: ${(props) => props.theme.colors.primary1};
 `;
+
+export const BlogHeaderContainer = styled.div`
+  display: flex;
+  padding: 1rem;
+  padding-top: 2rem;
+  position: fixed;
+  top: 0;
+  background-color: ${(props) => props.theme.colors.background1};
+  z-index: 1;
+
+  width: 100%;
+  justify-content: space-between;
+
+  // #0f1624
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 90px;
+    // display: none;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: repeat(2, 60px);
+    // grid-column-gap: 0.5rem;
+    // grid-row-gap: 0.5rem;
+  }
+`;
+
+export const BlogLinksDiv = styled.div`
+  padding-left: 20px;
+  display: flex;
+
+  @media (max-width: 870px) {
+    display: block;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: block;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    // display: none;
+  }
+`;

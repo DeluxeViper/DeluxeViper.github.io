@@ -253,6 +253,11 @@ const Header = () => {
                   <NavLink>About</NavLink>
                 </Link>
               </HeaderItem>
+              <HeaderItem>
+                <Link href="/blog">
+                  <NavLink>Blog</NavLink>
+                </Link>
+              </HeaderItem>
               <HeaderItem style={{ position: "relative", top: "-10px" }}>
                 {getDarkModeToggle()}
               </HeaderItem>
