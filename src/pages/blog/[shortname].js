@@ -1,21 +1,23 @@
 /** @format */
 
 import React, { useState } from "react";
+
 import { Layout } from "../../layout/Layout";
 import Theme from "../../styles/theme";
-import BlogList from "../../components/BlogList/BlogList";
 import { useRouter } from "next/router";
 
-const Blog = () => {
+const BlogPost = () => {
   const [themeType, setThemeType] = useState("light");
+  const router = useRouter();
+  const shortname = router.query.shortname;
+
+  console.log(shortname);
 
   return (
     <Theme themeType={themeType}>
-      <Layout isBlog={true}>
-        <BlogList />
-      </Layout>
+      <Layout isBlog={true}>{shortname}</Layout>
     </Theme>
   );
 };
 
-export default Blog;
+export default BlogPost;

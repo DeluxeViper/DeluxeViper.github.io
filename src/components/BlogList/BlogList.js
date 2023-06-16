@@ -6,13 +6,17 @@ import {
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import {} from "./BlogStyles";
+import BlogCard from "./BlogCard";
 
 const BlogList = () => {
   return (
     <Section>
+      <SectionDivider />
+      <br />
       <SectionTitle>Blog</SectionTitle>
-      <div className="blog_container"></div>
+      <BlogCard shortname={"random"}></BlogCard>
+      <BlogCard></BlogCard>
+      <BlogCard></BlogCard>
     </Section>
   );
 };

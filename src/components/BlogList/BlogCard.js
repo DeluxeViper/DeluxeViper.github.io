@@ -9,8 +9,12 @@ import {
   ReadMoreBtn,
   BlogImgWrapper,
 } from "./BlogCardStyle";
+import Link from "next/link";
 
-const BlogCard = () => {
+const BlogCard = (props) => {
+  if (!props.shortname) {
+    return <div>Undefined shortname</div>;
+  }
   return (
     <Container>
       <div style={{ display: "flex", alignItems: "center" }}>
@@ -34,7 +38,9 @@ const BlogCard = () => {
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum
           </BlogText>
-          <ReadMoreBtn>READ MORE</ReadMoreBtn>
+          <ReadMoreBtn>
+            <Link href={`/blog/${props.shortname}`}>READ MORE</Link>
+          </ReadMoreBtn>
         </div>
       </div>
     </Container>
