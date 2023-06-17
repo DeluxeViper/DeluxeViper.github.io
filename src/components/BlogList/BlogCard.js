@@ -12,7 +12,7 @@ import {
 import Link from "next/link";
 
 const BlogCard = (props) => {
-  if (!props.shortname) {
+  if (!props.blog.shortname) {
     return <div>Undefined shortname</div>;
   }
   return (
@@ -21,25 +21,16 @@ const BlogCard = (props) => {
         <BlogImgWrapper>
           <img
             alt=""
-            src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
+            src={props.blog.image}
+            style={{ objectFit: "contain", height: "200px", width: "200px" }}
           />
         </BlogImgWrapper>
         <div>
-          <BlogDate>Date Posted</BlogDate>
-          <BlogTitle>Blog Title</BlogTitle>
-          <BlogText>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum
-          </BlogText>
+          <BlogDate>{props.blog.date_posted}</BlogDate>
+          <BlogTitle>{props.blog.title}</BlogTitle>
+          {/* <BlogText>{props.blog.short_description}</BlogText> */}
           <ReadMoreBtn>
-            <Link href={`/blog/${props.shortname}`}>READ MORE</Link>
+            <Link href={`/blog/${props.blog.shortname}`}>READ MORE</Link>
           </ReadMoreBtn>
         </div>
       </div>

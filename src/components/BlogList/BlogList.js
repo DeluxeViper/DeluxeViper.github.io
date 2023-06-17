@@ -7,6 +7,7 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import BlogCard from "./BlogCard";
+import { blogs } from "../../constants/blog_constants";
 
 const BlogList = () => {
   return (
@@ -14,9 +15,9 @@ const BlogList = () => {
       <SectionDivider />
       <br />
       <SectionTitle>Blog</SectionTitle>
-      <BlogCard shortname={"random"}></BlogCard>
-      <BlogCard></BlogCard>
-      <BlogCard></BlogCard>
+      {blogs.map((blog) => (
+        <BlogCard blog={blog} />
+      ))}
     </Section>
   );
 };

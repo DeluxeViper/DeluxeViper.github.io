@@ -13,20 +13,11 @@ export const Container = styled.div`
   box-shadow: 0px 14px 15px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
-  height: 300px;
+  height: fit-content;
   transition: all 0.3s;
 
   @media screen and (max-width: 992px) {
     max-width: 680px;
-    height: 300px;
-  }
-
-  @media screen and (max-width: 768px) {
-    min-height: 200px;
-  }
-
-  @media screen and (max-width: 640px) {
-    height: 300px;
   }
 `;
 
@@ -54,7 +45,7 @@ export const BlogText = styled.p`
   overflow-wrap: normal;
 
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 `;
 
@@ -105,6 +96,6 @@ export const BlogImgWrapper = styled.div`
     height: 100%;
     background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
     border-radius: 20px;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 `;
