@@ -6,10 +6,13 @@ import "../styles/ToggleStyles.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Script from "next/script";
+import Theme from "../styles/theme";
 
 export default function App({ Component, pageProps }) {
+  const [themeType, setThemeType] = useState("light");
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -35,7 +38,9 @@ export default function App({ Component, pageProps }) {
           `,
         }}
       />
-      <Component {...pageProps} />
+      <Theme themeType={themeType} setThemeType={setThemeType}>
+        <Component {...pageProps} />
+      </Theme>
     </>
   );
 }
