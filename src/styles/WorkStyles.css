@@ -114,7 +114,7 @@ body {
 }
 
 .amz-work-card-preview {
-  background-color: #FF9900;
+  background-color: #ff9900;
   color: #fff;
   max-width: 250px;
   min-width: 25%;
@@ -241,8 +241,6 @@ body {
   padding-left: 1rem;
   pointer-events: none;
 }
-
-
 
 @media (max-width: 900px) {
   .work-card-container :hover {

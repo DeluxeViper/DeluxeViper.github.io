@@ -52,7 +52,7 @@ const WorkCard = (props) => (
                 <li>
                   <h6>{listItem}</h6>
                 </li>
-                <br />
+                <div style={{ marginBottom: "15px" }} />
               </div>
             ))}
           </ul>

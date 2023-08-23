@@ -253,8 +253,6 @@ export const BlogHeaderContainer = styled.div`
   width: 100%;
   justify-content: space-between;
 
-  // #0f1624
-
   @media ${(props) => props.theme.breakpoints.sm} {
     height: 90px;
     // display: none;

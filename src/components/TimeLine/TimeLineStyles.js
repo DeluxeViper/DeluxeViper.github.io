@@ -69,7 +69,7 @@ export const CarouselItem = styled.div`
 export const CarouselItemTitle = styled.h4`
   font-weight: bold;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 28px;
   letter-spacing: 0.02em;
   display: flex;
   /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
@@ -89,9 +89,10 @@ export const CarouselItemTitle = styled.h4`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 32px;
-    line-height: 24px;
+    line-height: 35px;
   }
 `;
+
 export const CarouselItemImg = styled.svg`
   margin-left: 21px;
   -webkit-mask-image: linear-gradient(

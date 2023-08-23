@@ -8,6 +8,9 @@ const isProduction = process.env.NODE_ENV === "production";
 
 const nextConfig = {
   /* config options here */
+  experimental: {
+    esmExternals: false,
+  },
 };
 
 module.exports = {
