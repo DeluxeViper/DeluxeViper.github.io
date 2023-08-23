@@ -13,11 +13,14 @@ export const Layout = ({ children, isBlog }) => {
   return (
     <Container>
       {isBlog ? (
-        <BlogHeader></BlogHeader>
+        <BlogHeader
+          themeType={themeType}
+          setThemeType={setThemeType}
+        ></BlogHeader>
       ) : (
         <Header themeType={themeType} setThemeType={setThemeType} />
       )}
-      <main style={{ marginTop: "120px" }}>{children}</main>
+      <main style={{ marginTop: !isBlog ? "120px" : "0px" }}>{children}</main>
       <Footer style={{}} />
     </Container>
   );

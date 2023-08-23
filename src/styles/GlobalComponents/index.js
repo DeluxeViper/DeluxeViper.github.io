@@ -103,12 +103,13 @@ export const SectionDivider = styled.div`
     height: 2px;
   }
 `;
+
 export const SectionSubText = styled.p`
   max-width: 800px;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: ${(props) => props.theme.colors.primary2};
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 672px;
@@ -121,6 +122,7 @@ export const SectionSubText = styled.p`
     line-height: 22px;
   }
 `;
+
 export const SecondaryBtn = styled.button`
   color: #fff;
   background: none;

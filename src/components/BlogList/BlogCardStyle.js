@@ -1,6 +1,6 @@
 /** @format */
 
-// Credits to https://codepen.io/JavaScriptJunkie/pen/WgRBxw for the inspiration
+// Credits to https://codepen.io/JavaScriptJunkie/pen/WgRBxw for the blog card style inspiration
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -26,6 +26,7 @@ export const BlogDate = styled.p`
   margin-bottom: 15px;
   display: block;
   font-weight: 500;
+  font-size: 12px;
 `;
 
 export const BlogTitle = styled.p`
@@ -51,7 +52,7 @@ export const BlogText = styled.p`
 
 export const ReadMoreBtn = styled.a`
   display: inline-flex;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  background-image: linear-gradient(147deg, #f46737 0%, #945dd6 74%);
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
@@ -64,13 +65,13 @@ export const ReadMoreBtn = styled.a`
 `;
 
 export const BlogImgDiv = styled.div`
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  background-image: linear-gradient(147deg, #f46737 0%, #945dd6 74%);
 `;
 export const BlogImgWrapper = styled.div`
   width: 200px;
   flex-shrink: 0;
   height: 200px;
-  background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+  background-image: linear-gradient(147deg, #f46737 0%, #945dd6 74%);
   box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
   border-radius: 20px;
   transform: translateX(-100px);
@@ -94,7 +95,7 @@ export const BlogImgWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+    background-image: linear-gradient(147deg, #f46737 0%, #945dd6 74%);
     border-radius: 20px;
     opacity: 0.7;
   }

@@ -1,20 +1,18 @@
 /** @format */
 
-import React, { useState } from "react";
+import React from "react";
 import { Layout } from "../../layout/Layout";
-import Theme from "../../styles/theme";
 import BlogList from "../../components/BlogList/BlogList";
-import { useRouter } from "next/router";
 
 const Blog = () => {
-  const [themeType, setThemeType] = useState("light");
-
   return (
-    <Theme themeType={themeType}>
+    <div>
+      <div style={{ marginTop: "-1000px" }} />
+      {/* Reduces the margin set by Layout component */}
       <Layout isBlog={true}>
         <BlogList />
       </Layout>
-    </Theme>
+    </div>
   );
 };
 

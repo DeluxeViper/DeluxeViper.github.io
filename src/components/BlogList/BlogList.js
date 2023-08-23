@@ -15,6 +15,7 @@ const BlogList = () => {
       <SectionDivider />
       <br />
       <SectionTitle>Blog</SectionTitle>
+      <br />
       {blogs.map((blog) => (
         <BlogCard blog={blog} />
       ))}
