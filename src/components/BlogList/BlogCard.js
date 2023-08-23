@@ -29,9 +29,9 @@ const BlogCard = (props) => {
           <BlogDate>{props.blog.date_posted}</BlogDate>
           <BlogTitle>{props.blog.title}</BlogTitle>
           {/* <BlogText>{props.blog.short_description}</BlogText> */}
-          <ReadMoreBtn>
-            <Link href={`/blog/${props.blog.shortname}`}>READ MORE</Link>
-          </ReadMoreBtn>
+          <Link href={`/blog/${props.blog.shortname}`}>
+            <ReadMoreBtn>READ MORE</ReadMoreBtn>
+          </Link>
         </div>
       </div>
     </Container>

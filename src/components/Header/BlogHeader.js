@@ -10,6 +10,7 @@ import {
   P,
   BlogHeaderContainer,
   BlogLinksDiv,
+  SmallHeaderContainer,
 } from "./HeaderStyles";
 import { HeaderItem } from "./HeaderStyles";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
@@ -20,17 +21,23 @@ import { ThemeContext } from "./../../styles/theme";
 const BlogHeader = () => {
   const [theme, setTheme] = useContext(ThemeContext);
 
+  const changeTheme = () => {
+    let themeToChangeTo = theme === "dark" ? "light" : "dark";
+    setTheme(themeToChangeTo);
+    localStorage.setItem("theme", themeToChangeTo);
+  };
+
   const getDarkModeToggle = () => (
     <div>
       <input
         className="toggle"
         type="checkbox"
         id="toggle"
-        onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+        onChange={changeTheme}
       />
       <label
         className="toggle_label"
-        for="toggle"
+        htmlFor="toggle"
         style={{ position: "relative" }}
       >
         <svg
@@ -74,48 +81,100 @@ const BlogHeader = () => {
   );
 
   return (
-    <BlogHeaderContainer>
-      <div
-        style={{
-          maxWidth: "1040px",
-          display: "flex",
-          justifyContent: "space-between",
-          width: "100%",
-        }}
-      >
-        <Div1>
-          <Link className={styles.link_name} href="/">
+    <div>
+      <SmallHeaderContainer>
+        <Div1
+          style={{
+            width: "100%",
+            justifyContent: "center",
+          }}
+        >
+          <Link
+            href="#"
+            className={styles.link_name}
+            style={{ display: "flex" }}
+          >
             <a
               style={{
                 display: "flex",
                 "align-items": "center",
+                "white-space": "nowrap",
               }}
+              href="javascript:void(0)"
             >
               <ThemeDiv>
-                <DiCssdeck size="5rem" />
+                <DiCssdeck size="4rem" />
+                {/* <img
+                  src="/images/portfolioImage.jpg"
+                  height="4rem"
+                  width="4rem"
+                ></img> */}
               </ThemeDiv>
-              <P>Abdullah Mohamed</P>
+              <P blog>Abdullah Mohamed</P>
             </a>
           </Link>
         </Div1>
-        <BlogLinksDiv>
-          <Div3>
-            <HeaderItem style={{ position: "relative", top: "-10px" }}>
-              {getDarkModeToggle()}
-            </HeaderItem>
-            <SocialIcons target="_blank" href="https://github.com/DeluxeViper">
-              <AiFillGithub size="3rem" />
-            </SocialIcons>
-            <SocialIcons
-              target="_blank"
-              href="https://linkedin.com/in/abdullah-mohamed"
-            >
-              <AiFillLinkedin size="3rem" />
-            </SocialIcons>
-          </Div3>
-        </BlogLinksDiv>
-      </div>
-    </BlogHeaderContainer>
+        <Div3>
+          <HeaderItem style={{ position: "relative", top: "-10px" }}>
+            {getDarkModeToggle()}
+          </HeaderItem>
+          <SocialIcons target="_blank" href="https://github.com/DeluxeViper">
+            <AiFillGithub size="3rem" />
+          </SocialIcons>
+          <SocialIcons
+            target="_blank"
+            href="https://linkedin.com/in/abdullah-mohamed"
+          >
+            <AiFillLinkedin size="3rem" />
+          </SocialIcons>
+        </Div3>
+      </SmallHeaderContainer>
+      <BlogHeaderContainer>
+        <div
+          style={{
+            maxWidth: "1040px",
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <Div1>
+            <Link className={styles.link_name} href="/">
+              <a
+                style={{
+                  display: "flex",
+                  "align-items": "center",
+                }}
+              >
+                <ThemeDiv>
+                  <DiCssdeck size="5rem" />
+                </ThemeDiv>
+                <P>Abdullah Mohamed</P>
+              </a>
+            </Link>
+          </Div1>
+          <BlogLinksDiv>
+            <Div3>
+              <HeaderItem style={{ position: "relative", top: "-10px" }}>
+                {getDarkModeToggle()}
+              </HeaderItem>
+              <SocialIcons
+                target="_blank"
+                href="https://github.com/DeluxeViper"
+              >
+                <AiFillGithub size="3rem" />
+              </SocialIcons>
+              <SocialIcons
+                target="_blank"
+                href="https://linkedin.com/in/abdullah-mohamed"
+              >
+                <AiFillLinkedin size="3rem" />
+              </SocialIcons>
+            </Div3>
+          </BlogLinksDiv>
+        </div>
+      </BlogHeaderContainer>
+    </div>
   );
 };
 

@@ -2,14 +2,28 @@
 
 import { ThemeProvider } from "styled-components";
 
-import { useState, createContext } from "react";
+import { useState, createContext, useEffect } from "react";
 import { lightTheme, darkTheme } from "../themes/default";
 import GlobalStyles from "./globals";
 
 export const ThemeContext = createContext();
 
 const Theme = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState();
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      let savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme === undefined || savedTheme === null) {
+        localStorage.setItem("theme", "light");
+        setTheme("light");
+      } else {
+        setTheme(savedTheme);
+      }
+    }
+  }, []);
+
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
       <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>

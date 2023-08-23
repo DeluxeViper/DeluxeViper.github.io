@@ -13,6 +13,34 @@ export const Section = styled.section`
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
 
+  ${(props) =>
+    props.blog === true &&
+    `
+    @media only screen and (max-width: 1100px) {
+      max-width: 800px;
+      padding: 32px 100px 0;
+      margin 0 auto;
+    }
+
+    @media only screen and (max-width: 900px) {
+      max-width: 700px;
+      padding: 32px 80px 0;
+      margin 0 auto;
+    }
+
+    @media only screen and (max-width: 700px) {
+      max-width: 550px;
+      padding: 32px 80px 0;
+      margin 0 auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+      max-width: 450px;
+      padding: 32px 80px 0;
+      margin 0 auto;
+    }
+  `}
+
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;
@@ -40,6 +68,40 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
+
+  ${(props) =>
+    props.blog === true &&
+    `
+      @media only screen and (max-width: 1050px) {
+        font-size: 60px;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        font-size: 50px;
+      }
+
+      @media only screen and (max-width: 900px) {
+        font-size: 45px;
+      }
+
+      @media only screen and (max-width: 850px) {
+        font-size: 40px;
+      }
+
+      @media only screen and (max-width: 770px) {
+        font-size: 35px !important;
+      }
+
+      @media only screen and (max-width: 600px) {
+        font-size: 30px !important;
+      }
+
+      @media only screen and (max-width: 450px) {
+        font-size: 45px !important;
+        white-space: break-spaces;
+        line-height: 62px !important;
+      }
+    `}
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "56px" : "48px")};

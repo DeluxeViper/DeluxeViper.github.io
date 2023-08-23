@@ -1,6 +1,6 @@
 /** @format */
 import Link from "next/link";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useLayoutEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
 import HamburgerIcon from "./HamburgerIcon";
@@ -30,10 +30,17 @@ import {
 import { ThemeContext } from "./../../styles/theme";
 import { AnimatePresence, useReducedMotion } from "framer-motion";
 import styles from "./HeaderStyle.module.css";
+import { ButtonFront } from "../../styles/GlobalComponents";
 
 const Header = () => {
   const [theme, setTheme] = useContext(ThemeContext);
   const shouldReduceMotion = useReducedMotion();
+
+  const changeTheme = () => {
+    let themeToChangeTo = theme === "dark" ? "light" : "dark";
+    setTheme(themeToChangeTo);
+    localStorage.setItem("theme", themeToChangeTo);
+  };
 
   const getDarkModeToggle = () => (
     <div>
@@ -41,7 +48,7 @@ const Header = () => {
         className="toggle"
         type="checkbox"
         id="toggle"
-        onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+        onChange={changeTheme}
       />
       <label
         className="toggle_label"
@@ -116,6 +123,17 @@ const Header = () => {
             </a>
           </Link>
         </Div1>
+        <Div3>
+          <SocialIcons target="_blank" href="https://github.com/DeluxeViper">
+            <AiFillGithub size="3rem" />
+          </SocialIcons>
+          <SocialIcons
+            target="_blank"
+            href="https://linkedin.com/in/abdullah-mohamed"
+          >
+            <AiFillLinkedin size="3rem" />
+          </SocialIcons>
+        </Div3>
         <Menu>
           {({ isExpanded }) => {
             useEffect(() => {
@@ -182,6 +200,11 @@ const Header = () => {
                           <Link href="#about">
                             <MenuItem className={styles.menu_item}>
                               About
+                            </MenuItem>
+                          </Link>
+                          <Link href="/blog">
+                            <MenuItem className={styles.menu_item}>
+                              Blog
                             </MenuItem>
                           </Link>
                           <MenuItem
@@ -255,7 +278,19 @@ const Header = () => {
               </HeaderItem>
               <HeaderItem>
                 <Link href="/blog">
-                  <NavLink>Blog</NavLink>
+                  <div
+                    style={{
+                      border: "none",
+                      borderRadius: "50px",
+                      background:
+                        "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)",
+                      padding: "20px",
+                      paddingLeft: "25px",
+                      paddingRight: "25px",
+                    }}
+                  >
+                    <NavLink>Blog</NavLink>
+                  </div>
                 </Link>
               </HeaderItem>
               <HeaderItem style={{ position: "relative", top: "-10px" }}>

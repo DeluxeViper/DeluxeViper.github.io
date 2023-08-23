@@ -196,6 +196,16 @@ export const P = styled.p`
   @media (max-width: 721px) {
     font-size: 2rem;
   }
+
+  ${(props) =>
+    props.blog === true &&
+    `
+  @media only screen and (max-width: 550px) {
+    font-size: 2rem !important;
+    white-space: nowrap;
+  }
+  `}
+
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 3rem;
     white-space: nowrap;
@@ -255,11 +265,15 @@ export const BlogHeaderContainer = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     height: 90px;
-    // display: none;
+    display: none;
     // grid-template-columns: repeat(5, 1fr);
     // grid-template-rows: repeat(2, 60px);
     // grid-column-gap: 0.5rem;
     // grid-row-gap: 0.5rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    padding: 2rem;
   }
 `;
 

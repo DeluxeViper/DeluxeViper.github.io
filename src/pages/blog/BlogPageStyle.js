@@ -17,4 +17,20 @@ export const BlogTag = styled.div`
   padding: 10px;
   border-radius: 10px;
   font-size: 18px;
+
+  @media only screen and (max-width: 650px) {
+    margin: 20px 10px 5px 0px;
+  }
+`;
+
+export const StyledMarginBot = styled.div`
+  margin-bottom: 130px;
+
+  @media only screen and (max-width: 700px) {
+    margin-bottom: 110px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    margin-bottom: 100px;
+  }
 `;

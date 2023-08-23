@@ -2,7 +2,6 @@ import React, { useEffect, useState, useContext } from "react";
 import ReactMarkdown from "react-markdown";
 import { LightAsync as SyntaxHighlighter } from "react-syntax-highlighter";
 import { Layout } from "../../layout/Layout";
-import Theme, { ThemeContext } from "../../styles/theme";
 import { useRouter } from "next/router";
 import {
   Section,
@@ -10,7 +9,7 @@ import {
   SectionTitle,
   SectionText,
 } from "../../styles/GlobalComponents";
-import { BlogTags, BlogTag } from "./BlogPageStyle";
+import { BlogTags, BlogTag, StyledMarginBot } from "./BlogPageStyle";
 import remarkBreaks from "remark-breaks";
 import remarkRehype from "remark-rehype/lib";
 import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism";
@@ -41,8 +40,8 @@ const BlogPost = () => {
   return (
     <Layout isBlog={true}>
       {/* Shifts starting of page down */}
-      <div style={{ marginBottom: "130px" }} />
-      <Section>
+      <StyledMarginBot />
+      <Section blog>
         <SectionDivider />
         <SectionTitle>{blogInfo?.title}</SectionTitle>
         <SectionText>{blogInfo?.date_posted}</SectionText>

@@ -7,7 +7,7 @@ import BlogList from "../../components/BlogList/BlogList";
 const Blog = () => {
   return (
     <div>
-      <div style={{ marginTop: "-1000px" }} />
+      <div style={{ marginTop: "-50px" }} />
       {/* Reduces the margin set by Layout component */}
       <Layout isBlog={true}>
         <BlogList />
