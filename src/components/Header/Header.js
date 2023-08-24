@@ -52,7 +52,7 @@ const Header = () => {
       />
       <label
         className="toggle_label"
-        for="toggle"
+        htmlFor="toggle"
         style={{ position: "relative" }}
       >
         <svg
@@ -107,8 +107,8 @@ const Header = () => {
             <a
               style={{
                 display: "flex",
-                "align-items": "center",
-                "white-space": "nowrap",
+                alignItems: "center",
+                whiteSpace: "nowrap",
               }}
             >
               <ThemeDiv>
@@ -183,32 +183,48 @@ const Header = () => {
                           }}
                         >
                           <Link href="#work">
-                            <MenuItem className={styles.menu_item}>
+                            <MenuItem
+                              className={styles.menu_item}
+                              onSelect={() => {}}
+                            >
                               Work
                             </MenuItem>
                           </Link>
                           <Link href="#projects">
-                            <MenuItem className={styles.menu_item}>
+                            <MenuItem
+                              className={styles.menu_item}
+                              onSelect={() => {}}
+                            >
                               Projects
                             </MenuItem>
                           </Link>
                           <Link href="#tech">
-                            <MenuItem className={styles.menu_item}>
+                            <MenuItem
+                              className={styles.menu_item}
+                              onSelect={() => {}}
+                            >
                               Technologies
                             </MenuItem>
                           </Link>
                           <Link href="#about">
-                            <MenuItem className={styles.menu_item}>
+                            <MenuItem
+                              className={styles.menu_item}
+                              onSelect={() => {}}
+                            >
                               About
                             </MenuItem>
                           </Link>
                           <Link href="/blog">
-                            <MenuItem className={styles.menu_item}>
+                            <MenuItem
+                              className={styles.menu_item}
+                              onSelect={() => {}}
+                            >
                               Blog
                             </MenuItem>
                           </Link>
                           <MenuItem
                             className={`${styles.menu_item} ${styles.no_border}`}
+                            onSelect={() => {}}
                           >
                             {getDarkModeToggle()}
                           </MenuItem>
@@ -236,7 +252,7 @@ const Header = () => {
               <a
                 style={{
                   display: "flex",
-                  "align-items": "center",
+                  alignItems: "center",
                 }}
               >
                 <ThemeDiv>

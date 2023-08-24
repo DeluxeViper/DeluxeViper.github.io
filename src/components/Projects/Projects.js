@@ -35,7 +35,7 @@ const Projects = () => {
       <SectionTitle>Projects</SectionTitle>
       <div className="project_grid_container">
         {projects.map((project) => (
-          <ProjectCard project={project} />
+          <ProjectCard project={project} key={project.id} />
         ))}
       </div>
     </Section>

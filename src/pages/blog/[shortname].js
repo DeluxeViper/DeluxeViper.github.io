@@ -48,8 +48,10 @@ const BlogPost = () => {
         {/* Reduces padding of SectionText */}
         <div style={{ marginTop: "-40px" }}></div>{" "}
         <BlogTags>
-          {blogInfo?.topics.map((tag) => (
-            <BlogTag>{tag}</BlogTag>
+          {blogInfo?.topics.map((tag, index) => (
+            <BlogTag key={`${blogInfo.shortname}-tag-index-${index}`}>
+              {tag}
+            </BlogTag>
           ))}
         </BlogTags>
         <ReactMarkdown

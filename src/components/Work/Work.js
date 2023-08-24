@@ -16,7 +16,7 @@ const Work = () => (
     <br />
     <SectionTitle>Where I've Worked</SectionTitle>
     {workExps.map((workItem) => (
-      <WorkCard workItem={workItem} />
+      <WorkCard workItem={workItem} key={workItem.id} />
     ))}
   </Section>
 );

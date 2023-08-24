@@ -3,9 +3,9 @@
 import React from "react";
 
 const WorkCard = (props) => (
-  <div class="work-card-container">
+  <div className="work-card-container">
     <div
-      class={
+      className={
         props.workItem.company === "IBM"
           ? "ibm-work-card"
           : props.workItem.company === "Amazon"
@@ -14,7 +14,7 @@ const WorkCard = (props) => (
       }
     >
       <div
-        class={
+        className={
           props.workItem.company === "IBM"
             ? "ibm-work-card-preview"
             : props.workItem.company === "Amazon"
@@ -27,7 +27,7 @@ const WorkCard = (props) => (
         <a>{props.workItem.location}</a>
       </div>
       <div
-        class={
+        className={
           props.workItem.company === "IBM"
             ? "ibm-work-card-info"
             : props.workItem.company === "Amazon"
@@ -35,20 +35,20 @@ const WorkCard = (props) => (
             : "work-card-info"
         }
       >
-        <div class="progress-container">
-          {/* <div class="progress"></div> */}
+        <div className="progress-container">
+          {/* <div className="progress"></div> */}
           <span
-            class="progress-text"
+            className="progress-text"
             style={{ position: "relative", top: "-10px" }}
           >
             {props.workItem.startDate} - {props.workItem.endDate}
           </span>
         </div>
         <h2>{props.workItem.title}</h2>
-        <div class="work-description">
+        <div className="work-description">
           <ul>
-            {props.workItem.description?.map((listItem) => (
-              <div>
+            {props.workItem.description?.map((listItem, index) => (
+              <div key={`${props.workItem.id}-list-item-index-${index}`}>
                 <li>
                   <h6>{listItem}</h6>
                 </li>

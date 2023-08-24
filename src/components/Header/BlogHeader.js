@@ -97,10 +97,9 @@ const BlogHeader = () => {
             <a
               style={{
                 display: "flex",
-                "align-items": "center",
-                "white-space": "nowrap",
+                alignItems: "center",
+                whiteSpace: "nowrap",
               }}
-              href="javascript:void(0)"
             >
               <ThemeDiv>
                 <DiCssdeck size="4rem" />
@@ -143,7 +142,7 @@ const BlogHeader = () => {
               <a
                 style={{
                   display: "flex",
-                  "align-items": "center",
+                  alignItems: "center",
                 }}
               >
                 <ThemeDiv>

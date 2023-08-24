@@ -254,10 +254,27 @@ export const projects = [
 export const TimeLineData = [
   {
     year: 2018,
+    month: "Sept",
     text: "Started Computer Engineering (B. Eng) at Toronto Metropolitan University",
   },
   {
+    year: 2021,
+    month: "May",
+    text: "Started IBM SWE internship",
+  },
+  {
+    year: 2022,
+    month: "May",
+    text: "Ended IBM SWE internship",
+  },
+  {
     year: 2023,
-    text: "Graduated w/ Academic Distinction at Toronto Metropolitan University",
+    month: "Aug",
+    text: "Completed Amazon internship",
+  },
+  {
+    year: 2023,
+    month: "May",
+    text: "Graduated with a Computer Engineering (B. Eng) degree from Toronto Metropolitan University",
   },
 ];
