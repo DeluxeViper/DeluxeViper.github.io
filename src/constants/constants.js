@@ -8,6 +8,7 @@ export const workExps = [
     location: "Toronto, ON",
     description: [
       "Developed, tested, and deployed full-stack, internationalized features (22 countries) whilst leveraging Java, React (Typescript, Javascript, Redux, Jest) for the Advertising Console product within the Amazon Ads org",
+      "Spearheaded and delivered key features pertaining to a VP goal for about 90, 000 unique advertisers (per month) and 250, 000 total advertisers (per month)",
       "Devised technical strategies by diagnosing architectural software approaches while collaborating closely with key stakeholders, estimating effort & work for features, and executing task planning to exactitude",
       "Constructed a QuickSight dashboard for business intelligence analysis & improved operational excellence for internal UI library by approximately 75%",
     ],
@@ -20,9 +21,9 @@ export const workExps = [
     title: "Software Developer Intern",
     location: "Toronto, ON",
     description: [
-      "Drove the development of transitioning a Legacy Web Application to a Single Page Application for the IBM Business Process Manager (BPM) software in a Scrum environment",
-      "Developed RESTful APIs through the OpenAPI Specification and refactored Java EE backend logic, as well as worked on the database layer (DB2)",
-      "Refactored and developed reliable frontend pages in React with Typescript and CSS from JSP, Dojo, GWT pages written in Java",
+      "Drove implementation of Process Admin Console of IBM Business Process Manager software from a legacy web application in a scrum environment",
+      "Refactored, designed and developed 10+ Full-Stack pages in React with Typescript (ES6+), CSS, Redux, IBM’s Carbon Design System from JSP, GWT pages written in Java",
+      "Developed RESTful APIs through the OpenAPI Specification and refactored Java EE backend logic, as well as composed DB2 SQL queries",
       "Implemented i18n (internationalization) as well as IBM standardized accessibility requirements within the SPA",
       "Utilized Jira, Git, Jenkins, JFrog Artifactory and IBM RTC to organize tasks through functional needs and manage CI/CD pipelines",
       "Investigated and produced fixes for defects and bugs within the IBM Business Process Manager software",
@@ -36,12 +37,13 @@ export const workExps = [
     title: "Research Assistant",
     location: "Toronto, ON",
     description: [
-      "Spearheading the development of efficient ML models for in-game emotion recognition for therapeutic VR games",
-      "Explored and implemented custom ML (CNN) model deployment onto Unity3D with C# on several OS (Android, etc.)",
-      "Collaborating with the director of multimedia at TMU, post-doctorate student, several undergraduate RAs",
+      "Spearheaded the development of VR software within Unity3D (C#) using the HP Reverb G2 headset with the Tobii SDK, XR Interaction Toolkit, Windows Mixed Reality Portal for a myriad of medical research/hospital/paediatric use cases including eye tracking, heatmap generation, pupil diameter, cognitive load, heart rate, and much more",
+      "Explored and implemented ML (1D-CNN) model deployment (Edge AI) onto Unity3D with C# on several OS (Android, etc.) via PyTorch/ONNX model conversion, saving 70% of budget on cloud computation",
+      "Trained Photoplethysmography (PPG) signal 1D-CNN model for stress classification from DEAP dataset using data augmentation, hyper-parameter optimization, batch normalization & dropout methods to achieving 82% training accuracy",
+      "Collaborated with Director/Supervisor Naimul Khan at TMU Multimedia lab, post-doctorate, and several RA constituents for in-game emotion recognition for therapeutic VR games",
     ],
     startDate: "May 2023",
-    endDate: "Present",
+    endDate: "Aug 2023",
   },
   {
     id: 3,
