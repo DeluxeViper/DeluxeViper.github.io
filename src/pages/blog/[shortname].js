@@ -9,7 +9,7 @@ import {
   SectionTitle,
   SectionText,
 } from "../../styles/GlobalComponents";
-import { BlogTags, BlogTag, StyledMarginBot } from "./BlogPageStyle";
+import { BlogTags, BlogTag, StyledMarginBot } from "../../styles/BlogPageStyle";
 import remarkBreaks from "remark-breaks";
 import remarkRehype from "remark-rehype/lib";
 import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism";

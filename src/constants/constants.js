@@ -257,7 +257,7 @@ export const TimeLineData = [
   {
     year: 2018,
     month: "Sept",
-    text: "Started Computer Engineering (B. Eng) at Toronto Metropolitan University",
+    text: "Started Computer Engineering B. Eng at Toronto Metropolitan University",
   },
   {
     year: 2021,
