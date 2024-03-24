@@ -10,6 +10,7 @@ import BlogCard from "./BlogCard";
 import { blogs } from "../../constants/blog_constants";
 import { ThemeContext } from "../../styles/theme";
 import { StyledCircuitSVG, MarginTopDiv } from "./BlogListStyle";
+import { P } from "../Header/HeaderStyles";
 
 const BlogList = () => {
   const [theme, setTheme] = useContext(ThemeContext);
@@ -340,16 +341,17 @@ const BlogList = () => {
       <StyledCircuitSVG blog>{renderCircuitSVG()}</StyledCircuitSVG>
       <div>
         {/* <div style={{ marginTop: "200px", position: "absolute" }}> */}
-        <SectionTitle blog main>
-          Recent Blog Posts
+        <SectionTitle blog main fontSize="70px">
+          Blog Posts
         </SectionTitle>
         {/* </div> */}
       </div>
       <MarginTopDiv />
       {/* <div style={{ marginBottom: "400px" }} /> */}
-      {blogs.map((blog) => (
+      {blogs.length ? blogs.map((blog) => (
         <BlogCard blog={blog} key={blog.shortname} />
-      ))}
+      )) : <P>New blog entries are in the works!</P>}
+      {}
     </Section>
   );
 };

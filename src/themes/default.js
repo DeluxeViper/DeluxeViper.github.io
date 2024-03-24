@@ -15,7 +15,7 @@ export const lightTheme = {
     accent1: "hsl(34.9,98.6%,72.9%)",
     button: "hsl(205.1,100%,36.1%)",
     background2: "hsl(233, 27%, 84%)",
-    boxShadow: "0px 14px 15px #262626",
+    boxShadow: "0px 14px 15px #727272 ",
   },
   // Breakpoints for responsive design
   breakpoints: {
@@ -42,7 +42,7 @@ export const darkTheme = {
     accent1: "hsl(34.9,98.6%,72.9%)",
     button: "hsl(205.1,100%,36.1%)",
     background2: "hsl(232.7,27.3%,23.7%)",
-    boxShadow: "0px 14px 15px rgb(245, 245, 245)",
+    boxShadow: "0px 14px 15px #999999",
   },
   // Breakpoints for responsive design
   breakpoints: {

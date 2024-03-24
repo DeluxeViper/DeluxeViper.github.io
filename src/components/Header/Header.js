@@ -1,6 +1,6 @@
 /** @format */
 import Link from "next/link";
-import React, { useContext, useEffect, useLayoutEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
 import HamburgerIcon from "./HamburgerIcon";
@@ -25,21 +25,21 @@ import {
   SmallHeaderContainer,
   MotionDiv,
   ThemeText,
-  BackgroundDiv,
 } from "./HeaderStyles";
 import { ThemeContext } from "./../../styles/theme";
 import { AnimatePresence, useReducedMotion } from "framer-motion";
 import styles from "./HeaderStyle.module.css";
-import { ButtonFront } from "../../styles/GlobalComponents";
 
 const Header = () => {
   const [theme, setTheme] = useContext(ThemeContext);
+  const [isChecked, setIsChecked] = useState(theme === "dark" ? true : false);
   const shouldReduceMotion = useReducedMotion();
 
   const changeTheme = () => {
     let themeToChangeTo = theme === "dark" ? "light" : "dark";
     setTheme(themeToChangeTo);
     localStorage.setItem("theme", themeToChangeTo);
+    setIsChecked(!isChecked);
   };
 
   const getDarkModeToggle = () => (
@@ -49,6 +49,7 @@ const Header = () => {
         type="checkbox"
         id="toggle"
         onChange={changeTheme}
+        checked={isChecked}
       />
       <label
         className="toggle_label"
@@ -300,12 +301,13 @@ const Header = () => {
                       borderRadius: "50px",
                       background:
                         "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)",
-                      padding: "20px",
-                      paddingLeft: "25px",
-                      paddingRight: "25px",
+                      padding: "15px",
+                      paddingLeft: "30px",
+                      paddingRight: "30px",
+                      color: "white",
                     }}
                   >
-                    <NavLink>Blog</NavLink>
+                    <NavLink color="white">Blog</NavLink>
                   </div>
                 </Link>
               </HeaderItem>

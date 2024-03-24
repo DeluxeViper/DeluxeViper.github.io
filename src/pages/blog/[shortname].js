@@ -14,6 +14,7 @@ import remarkBreaks from "remark-breaks";
 import remarkRehype from "remark-rehype/lib";
 import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { blogs } from "../../constants/blog_constants";
+import style from "./blog-page-style.module.css";
 
 const BlogPost = () => {
   const [content, setContent] = useState("");
@@ -54,11 +55,14 @@ const BlogPost = () => {
             </BlogTag>
           ))}
         </BlogTags>
+        <br />
+        <br />
         <ReactMarkdown
           source={content.replace(/\n/gi, "\\n")}
           // style={{ whiteSpace: "pre-wrap" }}
           remarkPlugins={[remarkBreaks]}
           rehypePlugins={[remarkRehype]}
+          className={style.reactMarkDown}
           children={content}
           components={{
             code({ node, inline, className, children, ...props }) {

@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { DiCssdeck } from "react-icons/di";
 import {
   Div1,
@@ -11,8 +11,14 @@ import {
   BlogHeaderContainer,
   BlogLinksDiv,
   SmallHeaderContainer,
+  Container,
+  Div2,
+  NavLink,
+  LinksDiv,
+  MotionDiv,
+  ThemeText,
+  HeaderItem,
 } from "./HeaderStyles";
-import { HeaderItem } from "./HeaderStyles";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Link from "next/link";
 import styles from "./HeaderStyle.module.css";
@@ -20,11 +26,13 @@ import { ThemeContext } from "./../../styles/theme";
 
 const BlogHeader = () => {
   const [theme, setTheme] = useContext(ThemeContext);
+  const [isChecked, setIsChecked] = useState(theme === "dark" ? true : false);
 
   const changeTheme = () => {
     let themeToChangeTo = theme === "dark" ? "light" : "dark";
     setTheme(themeToChangeTo);
     localStorage.setItem("theme", themeToChangeTo);
+    setIsChecked(!isChecked);
   };
 
   const getDarkModeToggle = () => (
@@ -34,6 +42,7 @@ const BlogHeader = () => {
         type="checkbox"
         id="toggle"
         onChange={changeTheme}
+        checked={isChecked}
       />
       <label
         className="toggle_label"
@@ -153,7 +162,7 @@ const BlogHeader = () => {
             </Link>
           </Div1>
           <BlogLinksDiv>
-            <Div3>
+            <div style={{ display: "flex", alignItems: "center" }}>
               <HeaderItem style={{ position: "relative", top: "-10px" }}>
                 {getDarkModeToggle()}
               </HeaderItem>
@@ -169,7 +178,7 @@ const BlogHeader = () => {
               >
                 <AiFillLinkedin size="3rem" />
               </SocialIcons>
-            </Div3>
+            </div>
           </BlogLinksDiv>
         </div>
       </BlogHeaderContainer>
