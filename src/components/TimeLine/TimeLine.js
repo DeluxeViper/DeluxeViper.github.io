@@ -79,21 +79,14 @@ const Timeline = () => {
         {/* How did you start learning something. What are your milestones?  */}
         Based out of Toronto, Ontario.
         <br /> <br />
-        I currently hold a Computer Engineering degree (with a Software
-        Concentration) from Toronto Metropolitan University (previously
-        Ryerson).
-        <br />
-        <br />I have a strong aptitude for full stack development, which
-        includes anything from React frontend to a Spring Boot backend, with a
-        sprinkle of SQL or NoSQL for the database. I also enjoy mobile
-        development where I've worked with Android/Flutter and a slight dash of
-        iOS development.
-        <br />
-        <br />
-        I'm also very fond of working with IoT technology including
-        embedded/firmware development, or robotics.
-        <br />
-        <br />
+        🎓 Currently working as a Software Dev Engineer I at Amazon whilst also pursuing a Master's of Engineering Part Time from the Electrical and Computing Engineering (ECE) Department at the University of Toronto St. George. I've previously completed a Bachelor's of Engineering focused in Computer Engineering (specializing in the Software concentration) from Toronto Metropolitan University.
+        <br /> <br />
+        ☕️ A strong passion for (Java) Full-Stack, Android/Flutter application development, backend server development, with several projects completed.
+        <br /> <br />
+        💻 Skilled in Java, Python, Kotlin, Javascript (Typescript), and have worked with frameworks/libraries such as React, the Spring framework, PyTorch, the Android ecosystem (ie. BLE, Room, Dagger), Docker, and much much more.
+        <br /> <br />
+        📚 Perks: A propensity to take initiatives, incredibly motivated, highly organized (detail-oriented) and a quick learner.
+        <br /> <br />
         My interests include: <br />- Artificial Intelligence/ML applications
         <br /> - Distributed Systems <br />- Embedded Systems engineering
         <br />- FPGAs
@@ -101,6 +94,7 @@ const Timeline = () => {
         GPU programming <br />- Overall developer/process optimization
         strategies
       </SectionText>
+      <SectionTitle fontSize="40px">Major Milestones</SectionTitle>
       <CarouselContainer
         ref={carouselRef}
         onScroll={handleScroll}

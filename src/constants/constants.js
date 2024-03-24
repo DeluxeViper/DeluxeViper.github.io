@@ -240,17 +240,17 @@ export const projects = [
     code: "https://github.com/DeluxeViper/TorrentClone",
     demo: "",
   },
-  {
-    id: 7,
-    title: "Air Traffic Control System",
-    short_description: "Distributed System - CLI Application",
-    description:
-      "Collaborated with a team of 4 individuals to create an Air Traffic Control System that uses technologies such as RabbitMQ and gRPC to ensure a distributed, scalable, secure and robust system inspired by the AeroMACS communication system (with some modifications).",
-    image: `images/ATS.jpg`,
-    tags: ["Python", "RabbitMQ", "gRPC", "Docker compose"],
-    code: "https://github.com/nigel5/air-traffic-control-system",
-    demo: "",
-  },
+  // {
+  //   id: 7,
+  //   title: "Air Traffic Control System",
+  //   short_description: "Distributed System - CLI Application",
+  //   description:
+  //     "Collaborated with a team of 4 individuals to create an Air Traffic Control System that uses technologies such as RabbitMQ and gRPC to ensure a distributed, scalable, secure and robust system inspired by the AeroMACS communication system (with some modifications).",
+  //   image: `images/ATS.jpg`,
+  //   tags: ["Python", "RabbitMQ", "gRPC", "Docker compose"],
+  //   code: "https://github.com/nigel5/air-traffic-control-system",
+  //   demo: "",
+  // },
 ];
 
 export const TimeLineData = [
@@ -279,4 +279,9 @@ export const TimeLineData = [
     month: "May",
     text: "Graduated with a Computer Engineering (B. Eng) degree from Toronto Metropolitan University",
   },
+  {
+    year: 2024,
+    month: "January",
+    text: "SDE 1 at Amazon",
+  }
 ];
