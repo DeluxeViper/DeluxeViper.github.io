@@ -142,6 +142,26 @@ export const projects = [
   },
   {
     id: 1,
+    title: "DAO Blockchain DApp",
+    short_description: "Full Stack Blockchain Decentralized Application",
+    description: "A decentralized application for a DAO (decentralized autonomous organization) that allows ETH blockchain users to create and vote for customized elections/proposals. These proposals can be customized with augmented voting mechanisms such as Quadratic Voting and a linear time decay.",
+    image: "images/DAO_DApp.png",
+    tags: [
+      "React",
+      "Solidity",
+      "Javascript",
+      "Truffle",
+      "Web3.js",
+      "Tailwindcss",
+      "Ganache",
+      "Metamask",
+      "IPFS",
+    ],
+    code: "https://github.com/DeluxeViper/ECE1770-QV-DAO-DApp-Project/tree/main",
+    demo: "https://quadradao-app.azurewebsites.net"
+  },
+  {
+    id: 2,
     title: "SmoothieMakersClub",
     short_description: "Full Stack Web Application",
     description:
@@ -167,7 +187,7 @@ export const projects = [
     demo: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "MemoryGo",
     short_description: "Cross-Platform Mobile Application",
     description:
@@ -178,7 +198,7 @@ export const projects = [
     demo: "https://play.google.com/store/apps/details?id=com.ceruleansource.MemoryGo",
   },
   {
-    id: 3,
+    id: 4,
     title: "Cooking Recipe Suggestion Web App",
     short_description: "Full Stack Web Application",
     description:
@@ -200,7 +220,7 @@ export const projects = [
     demo: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Livestream App",
     short_description: "Android Mobile Application",
     description:
@@ -211,7 +231,7 @@ export const projects = [
     demo: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Livestream Backend",
     short_description: "RESTful API Backend",
     description:
@@ -230,7 +250,7 @@ export const projects = [
     demo: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "Torrent Clone",
     short_description: "P2P CLI application",
     description:
