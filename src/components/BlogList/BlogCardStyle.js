@@ -127,6 +127,6 @@ export const BlogImgWrapper = styled.div`
     height: 100%;
     background-image: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
     border-radius: 20px;
-    opacity: 0.7;
+    opacity: 0.3;
   }
 `;

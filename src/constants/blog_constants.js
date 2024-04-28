@@ -1,5 +1,13 @@
 export const blogs = [
   {
+    shortname: "voting-mechanisms-and-their-impact-on-DAO-governance",
+    title: "Voting Mechanisms and their Impact on DAO Governance",
+    date_posted: "Apr 28, 2024",
+    short_description: "A birds eye view of the different voting mechanisms in the DAO governance space.",
+    image: "images/dao-governance-meta.jpg",
+    topics: ["Decentralized Autonomous Organization (DAO)", "DAO Governance", "Quadratic Voting", "Liquid Democracy", "Conviction Voting", "Anonymous Voting"],
+  },
+  {
     shortname: "blog-init",
     title: "Embarking on a Journey: My First Steps into the Blogosphere",
     date_posted: "Apr 27, 2024",
@@ -7,7 +15,7 @@ export const blogs = [
       "An introduction to my venture into the world of blogging.",
     image: "images/blog_post_image.jpg",
     topics: [],
-  }
+  },
   // {
   //   shortname: "opencv-macos-setup-with-source",
   //   title:

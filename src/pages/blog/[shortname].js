@@ -12,7 +12,7 @@ import {
 import { BlogTags, BlogTag, StyledMarginBot } from "../../styles/BlogPageStyle";
 import remarkBreaks from "remark-breaks";
 import remarkRehype from "remark-rehype/lib";
-import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { tomorrow, docco } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { blogs } from "../../constants/blog_constants";
 import style from "./blog-page-style.module.css";
 
@@ -71,13 +71,13 @@ const BlogPost = () => {
                 <SyntaxHighlighter
                   {...props}
                   children={children}
-                  style={tomorrow}
+                  style={docco}
                   language={match[1]}
                   PreTag="div"
                 />
               ) : (
                 <SyntaxHighlighter
-                  style={tomorrow}
+                  style={docco}
                   className="md-code"
                   PreTag="div"
                 >
