@@ -16,6 +16,7 @@ export const lightTheme = {
     button: "hsl(205.1,100%,36.1%)",
     background2: "hsl(233, 27%, 84%)",
     boxShadow: "0px 14px 15px #727272 ",
+    blogTagBackground: "#d3d3d3",
   },
   // Breakpoints for responsive design
   breakpoints: {
@@ -43,6 +44,7 @@ export const darkTheme = {
     button: "hsl(205.1,100%,36.1%)",
     background2: "hsl(232.7,27.3%,23.7%)",
     boxShadow: "0px 14px 15px #999999",
+    blogTagBackground: "#999999",
   },
   // Breakpoints for responsive design
   breakpoints: {

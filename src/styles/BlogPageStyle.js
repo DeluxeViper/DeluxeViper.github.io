@@ -13,7 +13,7 @@ export const BlogTag = styled.div`
   display: inline-block;
   position: relative;
   margin: 0px 10px 5px 0px;
-  background-color: #d3d3d3;
+  background-color: ${(props) => props.theme.colors.blogTagBackground};
   padding: 10px;
   border-radius: 10px;
   font-size: 18px;
@@ -21,6 +21,7 @@ export const BlogTag = styled.div`
   @media only screen and (max-width: 650px) {
     margin: 20px 10px 5px 0px;
   }
+
 `;
 
 export const StyledMarginBot = styled.div`
