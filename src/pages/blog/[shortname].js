@@ -47,7 +47,7 @@ const BlogPost = () => {
         <SectionTitle>{blogInfo?.title}</SectionTitle>
         <SectionText>{blogInfo?.date_posted}</SectionText>
         {/* Reduces padding of SectionText */}
-        <div style={{ marginTop: "-40px" }}></div>{" "}
+        <div style={{ marginTop: "-20px" }}></div>
         <BlogTags>
           {blogInfo?.topics.map((tag, index) => (
             <BlogTag key={`${blogInfo.shortname}-tag-index-${index}`}>

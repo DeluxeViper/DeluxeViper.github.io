@@ -1,4 +1,13 @@
 export const blogs = [
+  {
+    shortname: "blog-init",
+    title: "Embarking on a Journey: My First Steps into the Blogosphere",
+    date_posted: "Apr 27, 2024",
+    short_description:
+      "An introduction to my venture into the world of blogging.",
+    image: "images/blog_post_image.jpg",
+    topics: [],
+  }
   // {
   //   shortname: "opencv-macos-setup-with-source",
   //   title:

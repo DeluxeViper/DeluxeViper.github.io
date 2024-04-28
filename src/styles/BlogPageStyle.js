@@ -13,7 +13,7 @@ export const BlogTag = styled.div`
   display: inline-block;
   position: relative;
   margin: 0px 10px 5px 0px;
-  background-color: #949494;
+  background-color: #d3d3d3;
   padding: 10px;
   border-radius: 10px;
   font-size: 18px;
