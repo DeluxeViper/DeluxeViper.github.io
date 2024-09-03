@@ -1,5 +1,13 @@
 export const blogs = [
   {
+    shortname: "a-deep-reinforcement-learning-experiment-optimizing-uav-coverage",
+    title: "Charting New Horizons: Deep Reinforcement Learning for 2D UAV Coverage Optimization",
+    date_posted: "Sep 2, 2024",
+    short_description: "A dive into a deep reinforcement project regarding optimizing UAV Coverage",
+    image: "images/blog_post_image.jpg",
+    topics: ["Deep Reinforcement Learning", "DQN", "Deep Learning", "PyTorch", "Python"]
+  },
+  {
     shortname: "voting-mechanisms-and-their-impact-on-DAO-governance",
     title: "Voting Mechanisms and their Impact on DAO Governance",
     date_posted: "Apr 28, 2024",
