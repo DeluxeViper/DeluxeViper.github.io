@@ -8,7 +8,9 @@ export const workExps = [
     location: "Toronto, ON",
     description: [
       "Currently working in the Amazon Ads org on the Unity Campaign Manager (UCM) software"
-    ]
+    ],
+    startDate: "Jan 2024",
+    endDate: "Present",
   },
   {
     id: 0,
