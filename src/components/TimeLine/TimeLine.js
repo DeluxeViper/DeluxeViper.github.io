@@ -89,9 +89,7 @@ const Timeline = () => {
         <br /> <br />
         My interests include: <br />- Artificial Intelligence/ML applications
         <br /> - Distributed Systems <br />- Embedded Systems engineering
-        <br />- FPGAs
-        <br /> - Virtual/Augmented Reality <br />- Database Architecture <br />-
-        GPU programming <br />- Overall developer/process optimization
+        <br /> - Virtual/Augmented Reality <br />- Overall developer/process optimization/automation
         strategies
       </SectionText>
       <SectionTitle fontSize="40px">Major Milestones</SectionTitle>

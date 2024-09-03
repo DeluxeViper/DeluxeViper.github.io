@@ -2,6 +2,15 @@
 
 export const workExps = [
   {
+    id: 8,
+    company: "Amazon",
+    title: "Software Dev Engineer I",
+    location: "Toronto, ON",
+    description: [
+      "Currently working in the Amazon Ads org on the Unity Campaign Manager (UCM) software"
+    ]
+  },
+  {
     id: 0,
     company: "Amazon",
     title: "Software Developer Engineer Intern",
@@ -54,8 +63,8 @@ export const workExps = [
       "Developed and integrated a custom-made mood board plugin for a WordPress application",
       "Implemented a React + Canvas app using Javascript & HTML/CSS, utilizing the WooCommerce API",
     ],
-    startDate: "May 2023",
-    endDate: "Present",
+    startDate: "Sep 2022",
+    endDate: "Dec 2022",
   },
   {
     id: 4,
@@ -298,6 +307,11 @@ export const TimeLineData = [
     year: 2023,
     month: "May",
     text: "Graduated with a Computer Engineering (B. Eng) degree from Toronto Metropolitan University",
+  },
+  {
+    year: 2023,
+    month: "Sep",
+    text: "Started MEng at UofT",
   },
   {
     year: 2024,
