@@ -1,5 +1,13 @@
 export const blogs = [
   {
+    shortname: "prompt-engineering-for-automated-bug-fixing",
+    title: "Prompt Engineering for Automated Bug Fixing: A Preliminary LLM Study",
+    date_posted: "Apr 15, 2025",
+    short_description: "Diving into how prompt strategies can be used to automate bug fixing in a myriad of codebases",
+    image: "images/blog_post_image.jpg",
+    topics: ["LLM", "Python", "APR", "Empirical Software Engineering"]
+  },
+  {
     shortname: "a-deep-reinforcement-learning-experiment-optimizing-uav-coverage",
     title: "Charting New Horizons: Deep Reinforcement Learning for 2D UAV Coverage Optimization",
     date_posted: "Sep 2, 2024",

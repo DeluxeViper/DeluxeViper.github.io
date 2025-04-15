@@ -1,5 +1,6 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { LightAsync as SyntaxHighlighter } from "react-syntax-highlighter";
 import { Layout } from "../../layout/Layout";
 import { useRouter } from "next/router";
@@ -10,9 +11,7 @@ import {
   SectionText,
 } from "../../styles/GlobalComponents";
 import { BlogTags, BlogTag, StyledMarginBot } from "../../styles/BlogPageStyle";
-import remarkBreaks from "remark-breaks";
-import remarkRehype from "remark-rehype/lib";
-import { tomorrow, docco } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { docco } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { blogs } from "../../constants/blog_constants";
 import style from "./blog-page-style.module.css";
 
@@ -58,12 +57,9 @@ const BlogPost = () => {
         <br />
         <br />
         <ReactMarkdown
-          source={content.replace(/\n/gi, "\\n")}
-          // style={{ whiteSpace: "pre-wrap" }}
-          remarkPlugins={[remarkBreaks]}
-          rehypePlugins={[remarkRehype]}
-          className={style.reactMarkDown}
           children={content}
+          remarkPlugins={[remarkGfm]}
+          className={style.reactMarkDown}
           components={{
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || "");
